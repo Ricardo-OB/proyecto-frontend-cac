@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Celulares</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="grid-first-level">
+                <div class="icono">
+                    <svg width="28" height="28" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#000000" d="M29.1 27.1c-1.1-.1-2.2.3-3.1 1.1c-1.1 1.1-2.9 1.1-4.1 0c-1-.7-2.1-1.1-3.3-1.1c-1.2-.1-2.4.3-3.3 1.1c-.6.5-1.3.8-2.1.8s-1.5-.3-2.1-.8c-1-.8-2.2-1.2-3.4-1.2s-2.4.4-3.4 1.2c-.6.5-1.5.8-2.3.8v2c1.3.1 2.6-.3 3.6-1.2c.6-.5 1.5-.8 2.3-.8c.7 0 1.5.3 2.1.8c1.8 1.6 4.6 1.6 6.5 0c.6-.5 1.3-.8 2.1-.8c.7 0 1.4.3 2 .8c1.9 1.6 4.6 1.6 6.5 0c.5-.5 1.3-.8 2-.8s1.4.3 1.9.8c.9.7 1.9 1.1 3 1.2v-2c-1 0-1.2-.4-1.7-.8c-.9-.7-2-1.1-3.2-1.1z" class="clr-i-outline clr-i-outline-path-1"/>
+                        <path fill="#000000" d="M6 23c0-.6.5-1 1.1-1H32l-3.5 3.1h.2c.8 0 1.6.2 2.2.5l2.5-2.2l.2-.2c.7-.8.6-2.1-.2-2.8c-.4-.2-.8-.4-1.3-.4h-25c-1.7 0-3 1.3-3 3v3.2c.5-.5 1.2-.8 1.9-1.1V23z" class="clr-i-outline clr-i-outline-path-2"/>
+                        <path fill="#000000" d="M8.9 19H15v-7.8c0-.6-.3-1.2-.8-1.6c-.9-.7-2.2-.5-2.8.4l-4.1 5.9c-.4.6-.4 1.4-.1 2.1c.3.6 1 1 1.7 1zm4.2-7.8L13 17H8.9l4.2-5.8z" class="clr-i-outline clr-i-outline-path-3"/>
+                        <path fill="#000000" d="M26 18c.4-.6.4-1.4 0-2L19.7 5.6c-.4-.6-1-1-1.7-1c-1.1 0-2 .9-2 2V19h8.3c.7 0 1.4-.4 1.7-1zM17.9 6.6l6.4 10.5h-6.4V6.6z" class="clr-i-outline clr-i-outline-path-4"/>
+                        <path fill="none" d="M0 0h36v36H0z"/>
+                    </svg>
+                    <p><b>Tech Store</b></p>
+                </div>
+                <div class="icono-2">
+                    <i class="bi bi-cart"></i>
+                    <i class="bi bi-person-circle"></i>
+                    <p>Login</p>
+                </div>
+            </div>
+            <div class="grid-second-level">
+                <div class="paginas">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Celulares</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Computadoras</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="seccion-celulares">
+            <h1>Celulares</h1>
+            <div class="filtros-celulares">
+                <label for="select-marca">Marca</label>
+                <label for="select-resolucion">Resolución</label>
+                <label for="select-camara">Cámara</label>
+                <select id="select-marca">
+                    <option value="samsung">Samsung</option>
+                    <option value="apple" selected>Apple</option>
+                    <option value="huawei">Huawei</option>
+                    <option value="xiamoi">Xiamoi</option>
+                    <option value="motorola">Motorola</option>
+                </select>
+                <select id="select-resolucion">
+                    <option value="hd1">HD+ (720x1280px)</option>
+                    <option value="hd2" selected>HD+ (1080x1920px)</option>
+                    <option value="wqhd">WQHD+ (1440x2560px)</option>
+                </select>
+                <select id="select-camara">
+                    <option value="res1">16Mpx</option>
+                    <option value="res2" selected>32Mpx</option>
+                    <option value="res3">48Mpx</option>
+                    <option value="res4">64Mpx</option>
+                    <option value="res5">108Mpx</option>
+                </select>
+            </div>
+            <div class="container-cards-celulares">
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://www.apple.com/euro/iphone-15/a/generic/images/overview/closer-look/blue__daqp9wegmiy6_large.jpg" width="200" height="330" alt="cel1"></div>
+                    <div class="card-content">
+                      <h2 class="card-title">iPhone 15 Pro</h2>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                      <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://specifications-pro.com/wp-content/uploads/2020/06/Huawei-P50-Pro-1-600x600.jpg" height="330" alt="cel2"></div>
+                    <div class="card-content">
+                        <h2 class="card-title">Card Grid Layout</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <button class="btn btn-card">Comprar</button>
+                      </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://www.droidafrica.net/wp-content/uploads/2022/02/Samsung-Galaxy-S21-FE-Exynos-600x563.jpg" alt="cel3"></div>
+                    <div class="card-content">
+                        <h2 class="card-title">Card Grid Layout</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://www.apple.com/euro/iphone-15/a/generic/images/overview/closer-look/blue__daqp9wegmiy6_large.jpg" width="200" height="330" alt="cel1"></div>
+                    <div class="card-content">
+                      <h2 class="card-title">Card Grid Layout</h2>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                      <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/latam/co/mkt/homepage/new-homepage/phones/nova10-pro-new.png" width="275" alt="cel4"></div>
+                    <div class="card-content">
+                      <h2 class="card-title">Card Grid Layout</h2>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                      <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://www.apple.com/euro/iphone-15/a/generic/images/overview/closer-look/blue__daqp9wegmiy6_large.jpg" width="200" height="330" alt="cel1"></div>
+                    <div class="card-content">
+                      <h2 class="card-title">iPhone 15 Pro</h2>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                      <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://specifications-pro.com/wp-content/uploads/2020/06/Huawei-P50-Pro-1-600x600.jpg" height="330" alt="cel2"></div>
+                    <div class="card-content">
+                        <h2 class="card-title">Card Grid Layout</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <button class="btn btn-card">Comprar</button>
+                      </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://www.droidafrica.net/wp-content/uploads/2022/02/Samsung-Galaxy-S21-FE-Exynos-600x563.jpg" alt="cel3"></div>
+                    <div class="card-content">
+                        <h2 class="card-title">Card Grid Layout</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://www.apple.com/euro/iphone-15/a/generic/images/overview/closer-look/blue__daqp9wegmiy6_large.jpg" width="200" height="330" alt="cel1"></div>
+                    <div class="card-content">
+                      <h2 class="card-title">Card Grid Layout</h2>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                      <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/latam/co/mkt/homepage/new-homepage/phones/nova10-pro-new.png" width="275" alt="cel4"></div>
+                    <div class="card-content">
+                      <h2 class="card-title">Card Grid Layout</h2>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                      <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://www.droidafrica.net/wp-content/uploads/2022/02/Samsung-Galaxy-S21-FE-Exynos-600x563.jpg" alt="cel3"></div>
+                    <div class="card-content">
+                        <h2 class="card-title">Card Grid Layout</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://www.apple.com/euro/iphone-15/a/generic/images/overview/closer-look/blue__daqp9wegmiy6_large.jpg" width="200" height="330" alt="cel1"></div>
+                    <div class="card-content">
+                      <h2 class="card-title">Card Grid Layout</h2>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                      <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+                <div class="card-celular">
+                    <div class="card-image"><img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/latam/co/mkt/homepage/new-homepage/phones/nova10-pro-new.png" width="275" alt="cel4"></div>
+                    <div class="card-content">
+                      <h2 class="card-title">Card Grid Layout</h2>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                      <button class="btn btn-card">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-subcont-1">
+                    <div class="footer-subs">
+                        <h2>Promociones y Descuentos</h2>
+                        <p>Suscribete a nuestras promociones y descuentos</p>
+                    </div>
+                    <div class="footer-subs-email">
+                        <input type="email" spellcheck="false" placeholder="Email">
+                        <button>Subs</button>
+                    </div>
+                </div>
+                <div class="footer-subcont-2">
+                    <section class="footer-logo">
+                        <h2>
+                            <svg width="28" height="28" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#000000" d="M29.1 27.1c-1.1-.1-2.2.3-3.1 1.1c-1.1 1.1-2.9 1.1-4.1 0c-1-.7-2.1-1.1-3.3-1.1c-1.2-.1-2.4.3-3.3 1.1c-.6.5-1.3.8-2.1.8s-1.5-.3-2.1-.8c-1-.8-2.2-1.2-3.4-1.2s-2.4.4-3.4 1.2c-.6.5-1.5.8-2.3.8v2c1.3.1 2.6-.3 3.6-1.2c.6-.5 1.5-.8 2.3-.8c.7 0 1.5.3 2.1.8c1.8 1.6 4.6 1.6 6.5 0c.6-.5 1.3-.8 2.1-.8c.7 0 1.4.3 2 .8c1.9 1.6 4.6 1.6 6.5 0c.5-.5 1.3-.8 2-.8s1.4.3 1.9.8c.9.7 1.9 1.1 3 1.2v-2c-1 0-1.2-.4-1.7-.8c-.9-.7-2-1.1-3.2-1.1z" class="clr-i-outline clr-i-outline-path-1"/>
+                                <path fill="#000000" d="M6 23c0-.6.5-1 1.1-1H32l-3.5 3.1h.2c.8 0 1.6.2 2.2.5l2.5-2.2l.2-.2c.7-.8.6-2.1-.2-2.8c-.4-.2-.8-.4-1.3-.4h-25c-1.7 0-3 1.3-3 3v3.2c.5-.5 1.2-.8 1.9-1.1V23z" class="clr-i-outline clr-i-outline-path-2"/>
+                                <path fill="#000000" d="M8.9 19H15v-7.8c0-.6-.3-1.2-.8-1.6c-.9-.7-2.2-.5-2.8.4l-4.1 5.9c-.4.6-.4 1.4-.1 2.1c.3.6 1 1 1.7 1zm4.2-7.8L13 17H8.9l4.2-5.8z" class="clr-i-outline clr-i-outline-path-3"/>
+                                <path fill="#000000" d="M26 18c.4-.6.4-1.4 0-2L19.7 5.6c-.4-.6-1-1-1.7-1c-1.1 0-2 .9-2 2V19h8.3c.7 0 1.4-.4 1.7-1zM17.9 6.6l6.4 10.5h-6.4V6.6z" class="clr-i-outline clr-i-outline-path-4"/>
+                                <path fill="none" d="M0 0h36v36H0z"/>
+                            </svg>
+                        </h2>
+                    </section>
+                    <section>
+                        <h3>Productos</h3>
+                        <ul>
+                            <li><a href="#" title="Celulares">Celulares</a></li>
+                            <li><a href="#" title="Tablets">Tablets</a></li>
+                            <li><a href="#" title="Computadores">Computadores</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Soporte</h3>
+                        <ul>
+                            <li><a href="#" title="Servicio">Centro de Servicio</a></li>
+                            <li><a href="#" title="Repuestos">Repuestos</a></li>
+                            <li><a href="#" title="Garantía">Garantía</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Empresa</h3>
+                        <ul>
+                            <li><a href="#" title="Sobre Nosotros">Sobre Nosotros</a></li>
+                            <li><a href="#" title="Contacto">Contacto</a></li>
+                            <li><a href="#" title="Política de Privacidad">Política de Privacidad</a></li>
+                            <li><a href="#" title="Términos de Uso">Términos de Uso</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="footer-subcont-3">
+                    <div class='social-networks'>
+                        <ul>
+                            <li><a href="#" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+                            <li><a href="#" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#" title="YouTube"><i class="bi bi-youtube"></i></i></a></li>
+                        </ul>
+                    </div>
+                    <small>ⓒ Py Team 2023, todos los derechos reservados.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
