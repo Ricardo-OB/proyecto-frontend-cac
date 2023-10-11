@@ -186,6 +186,10 @@ main {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.resol-2, .cam-2 {
+    display: none;
+}
+
 .filtros-celulares > label {
     margin: 0px 0px 8px 5px;
     font-weight: bold;
@@ -243,6 +247,7 @@ main {
     /* width: 14rem;
     height: 19rem; */
     max-width: 100%;
+    max-height: 100%;
     vertical-align: middle;
 }
   
@@ -494,7 +499,8 @@ main {
 
     .grid-second-level {
         grid-template-columns: 1fr;
-        grid-gap: 1rem;
+        grid-gap: 0.8rem;
+        margin: 10px 0px;
     }
 
     .search {
@@ -503,6 +509,135 @@ main {
 
     .navbar {
         grid-template-rows: none;
+    }
+
+    .icono, .icono-2 {
+        padding: 18px 0px 15px;
+    }
+
+    .icono > p {
+        font-size: 16pt;
+    }
+
+    .icono-2 > p {
+        display: none;
+    }
+
+    /* Seccion celulares */
+
+    .seccion-celulares {
+        margin: 5px 0px 5px;
+    }
+
+    .seccion-celulares > h1 {
+        margin: 0px;
+    }
+
+    .filtros-celulares {
+        margin: 0px 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .resol-1, .cam-1 {
+        display: none;
+    }
+
+    .resol-2, .cam-2 {
+        display: flex;
+    }
+
+    .filtros-celulares > label {
+        margin: 5px;
+        padding: 10px 3px 5px;
+    }
+
+    .card-celular {
+        width: 300px;
+    }
+
+    .card-image {
+        height: 16rem;
+    }
+
+    .card-content {
+        padding: 0.5rem;
+    }
+
+    .card-content > p {
+        margin-bottom: 18px;
+    }
+
+    .btn-card {
+        padding: 0.5rem 0.1rem;
+        margin-bottom: 7px;
+    }
+
+    .seccion-celulares h1 {
+        font-size: 25pt;
+        text-align: center;
+    }
+
+    #select-marca, #select-resolucion, #select-camara {
+        font-size: 15px;
+        padding: 5px 4px;
+    }
+
+    /* Footer */
+
+    .footer-subs-email {
+        justify-content: center;
+    }
+
+    .footer-subs-email > input {
+        width: 100%;
+        font-size: 14px;
+        padding: 5px 9px;
+    }
+
+    .footer-subs-email > button {
+        font-size: 14px;
+        padding: 5px 9px;
+    }
+
+    .footer-subs {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .footer-subcont-1 {
+        font-size: 14px;
+        padding: 10px 0px;
+    }
+    
+    .footer-subcont-3 {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .footer-subcont-3 > small {
+        font-size: 14px;
+    }
+    
+    .footer-subcont-2 {
+        gap: 10px;
+    }
+
+    .footer-subcont-2 section {
+        font-size: 14px;
+    }
+
+    .footer-subcont-2 .footer-logo {
+        margin-bottom: 8px;
+        justify-content: center;
+    }
+
+    .footer-subcont-2 h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .footer-subcont-2 ul li {
+        margin-bottom: 8px;
     }
 
 }
