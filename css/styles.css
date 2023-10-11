@@ -620,6 +620,7 @@ main {
     
     .footer-subcont-2 {
         gap: 10px;
+        padding: 8px;
     }
 
     .footer-subcont-2 section {
@@ -638,6 +639,11 @@ main {
 
     .footer-subcont-2 ul li {
         margin-bottom: 8px;
+    }
+
+    .footer-logo svg {
+        width: 55px;
+        height: 55px;
     }
 
 }
