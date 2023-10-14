@@ -168,14 +168,14 @@ main {
     margin: 20px
 }
 
-.seccion-celulares {
+.seccion-celulares, .seccion-sobre-nosotros {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 40px 130px 30px;
 }
 
-.seccion-celulares h1 {
+.seccion-celulares h1, .seccion-sobre-nosotros h1 {
     margin: 8px 0px;
     font-size: 40pt;
 }
@@ -478,6 +478,95 @@ main {
     transition: all 0.3s ease-in-out;
     transform: scale(1.5);
 }
+
+
+/* Sobre nosotros */
+
+.seccion-sobre-nosotros > p {
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+.container-personas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.container-person {
+    background-color: #ffffff;
+    width: 70%;
+    height: 18rem;
+    margin: 28px 20px;
+    box-shadow: 0 20px 30px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.096);
+}
+
+.container-personas > .person1 {
+    display: flex;
+    align-self: flex-start;
+}
+
+.container-personas > .person2 {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.container-personas > .person3 {
+    display: flex;
+    align-self: flex-start;
+}
+
+.image-person {
+    width: 35%;
+    height: 100%;
+}
+
+.image-person > img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.info-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+    padding: 0px 20px;
+    gap: 10px;
+}
+
+.info-person i {
+    font-size: 15pt;
+    padding-right: 7px;
+}
+
+.person2 > .info-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+figcaption p {
+    text-align: center;
+    margin: 50% 0%;
+}
+
+[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption {
+    background: linear-gradient(to bottom right, rgba(181, 193, 194, 0.95) 20%, rgba(136, 156, 187, 0.95) 100%);
+}
+
 
 @media screen and (min-width:0px) and (max-width: 480px) {
     /* Navbar */
