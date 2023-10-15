@@ -53,3 +53,20 @@ function obtenerPersonas() {
 }
 
 obtenerPersonas();
+
+const cards = document.getElementsByClassName("card-celular");
+const carritos = document.getElementsByClassName("little-car");
+
+for (let i=0; i<cards.length; i++) {
+    cards[i].addEventListener("mouseout",
+                                (event) => {
+                                    carritos[i].style.display = "none";
+                                },
+                                false,);
+
+    cards[i].addEventListener("mouseover",
+                                (event) => {
+                                    carritos[i].style.display = "flex";
+                                },
+                                false,);
+}

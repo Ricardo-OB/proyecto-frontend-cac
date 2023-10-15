@@ -276,25 +276,53 @@ main {
     text-align: center;
 }
 
+.botones-cel {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-bottom: 6px;
+}
+
+.botones-cel .btn-1 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.botones-cel .btn-2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
 .btn-card {
     color: #242424;
+    width: 85%;
     padding: 0.8rem 0.4rem;
-    margin-bottom: 5px;
     font-size: 14px;
     border-radius: 4px;
     font-weight: 400;
-    display: block;
-    width: 80%;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.55);
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0.15);
     transition: all 0.3s ease;
-  }
+}
   
 .btn-card:hover {
-    background-color: rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.30);
     transition: all 0.3s ease;
     transform: scale(1.1);
+}
+
+.little-car {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 255, 0.3);
+    display: none;
+    align-self: flex-end;
+    margin: 8px;
+    border-radius: 5px
 }
 
 /* Footer */
@@ -496,8 +524,6 @@ main {
 
 .container-person {
     background-color: #ffffff;
-    width: 70%;
-    height: 18rem;
     margin: 28px 20px;
     box-shadow: 0 20px 30px -14px rgba(0, 0, 0, 0.25);
     overflow: hidden;
@@ -510,17 +536,20 @@ main {
 .container-personas > .person1 {
     display: flex;
     align-self: flex-start;
+    align-items: center;
 }
 
 .container-personas > .person2 {
     display: flex;
     align-self: flex-end;
     flex-direction: row-reverse;
+    align-items: center;
 }
 
 .container-personas > .person3 {
     display: flex;
     align-self: flex-start;
+    align-items: center;
 }
 
 .image-person {
@@ -543,7 +572,7 @@ main {
     width: 65%;
     height: 100%;
     padding: 0px 20px;
-    gap: 10px;
+    gap: 17px;
 }
 
 .info-person i {
@@ -560,7 +589,7 @@ main {
 
 figcaption p {
     text-align: center;
-    margin: 50% 0%;
+    /* margin: 50% 0%; */
 }
 
 [class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption {
@@ -737,13 +766,20 @@ figcaption p {
 
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:481px) and (max-width: 1366px) {
     /* Navbar */
     
     .paginas {
         display: flex !important;
         animation: fade-out 0.75s ease-in-out;
     }
+
+    /* Sobre nosotros */
+
+    .container-person {
+        max-width: 80%;
+    }
+
 }
 
 @keyframes fade-out {
