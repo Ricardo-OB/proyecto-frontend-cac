@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Producto</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="grid-first-level">
+                <div class="icono">
+                    <svg width="28" height="28" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#000000" d="M29.1 27.1c-1.1-.1-2.2.3-3.1 1.1c-1.1 1.1-2.9 1.1-4.1 0c-1-.7-2.1-1.1-3.3-1.1c-1.2-.1-2.4.3-3.3 1.1c-.6.5-1.3.8-2.1.8s-1.5-.3-2.1-.8c-1-.8-2.2-1.2-3.4-1.2s-2.4.4-3.4 1.2c-.6.5-1.5.8-2.3.8v2c1.3.1 2.6-.3 3.6-1.2c.6-.5 1.5-.8 2.3-.8c.7 0 1.5.3 2.1.8c1.8 1.6 4.6 1.6 6.5 0c.6-.5 1.3-.8 2.1-.8c.7 0 1.4.3 2 .8c1.9 1.6 4.6 1.6 6.5 0c.5-.5 1.3-.8 2-.8s1.4.3 1.9.8c.9.7 1.9 1.1 3 1.2v-2c-1 0-1.2-.4-1.7-.8c-.9-.7-2-1.1-3.2-1.1z" class="clr-i-outline clr-i-outline-path-1"/>
+                        <path fill="#000000" d="M6 23c0-.6.5-1 1.1-1H32l-3.5 3.1h.2c.8 0 1.6.2 2.2.5l2.5-2.2l.2-.2c.7-.8.6-2.1-.2-2.8c-.4-.2-.8-.4-1.3-.4h-25c-1.7 0-3 1.3-3 3v3.2c.5-.5 1.2-.8 1.9-1.1V23z" class="clr-i-outline clr-i-outline-path-2"/>
+                        <path fill="#000000" d="M8.9 19H15v-7.8c0-.6-.3-1.2-.8-1.6c-.9-.7-2.2-.5-2.8.4l-4.1 5.9c-.4.6-.4 1.4-.1 2.1c.3.6 1 1 1.7 1zm4.2-7.8L13 17H8.9l4.2-5.8z" class="clr-i-outline clr-i-outline-path-3"/>
+                        <path fill="#000000" d="M26 18c.4-.6.4-1.4 0-2L19.7 5.6c-.4-.6-1-1-1.7-1c-1.1 0-2 .9-2 2V19h8.3c.7 0 1.4-.4 1.7-1zM17.9 6.6l6.4 10.5h-6.4V6.6z" class="clr-i-outline clr-i-outline-path-4"/>
+                        <path fill="none" d="M0 0h36v36H0z"/>
+                    </svg>
+                    <p><b>Tech Store</b></p>
+                </div>
+                <div class="icono-2">
+                    <i class="bi bi-cart"></i>
+                    <p id="cont-carrito" title="Presiona para borrar" onclick="borrarCarrito()"></p>
+                    <i class="bi bi-person-circle"></i>
+                    <p>Login</p>
+                </div>
+            </div>
+            <div class="grid-second-level">
+                <div class="bar-paginas">
+                    <div class="wrap-menu">
+                        <a class="icon-menu" onclick="activarMenuH()">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+                    <ul class="paginas">
+                        <li><a href="#">Home</a></li>
+                        <li><a class="enlace-celulares" href="celulares.html">Celulares</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Computadoras</a></li>
+                        <li><a class="enlace-sobre-nosotros" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion-producto">
+            <div class="container-producto">
+                <div class="container-imagenes-producto">
+
+                </div>
+                <div class="container-datos-producto">
+                    <h2>Nombre del Producto</h2>
+                    <div class="calification">
+                        <ul>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                        <p>32 Calificaciones</p>
+                    </div>
+                    <p>$ 4.560.000</p>
+                    <div class="colores">
+                        <input type="checkbox" id="color1" name="color1">
+                        <label for="color1"> Gris</label>
+                        <input type="checkbox" id="color2" name="color2">
+                        <label for="color2"> Negro</label>
+                        <input type="checkbox" id="color3" name="color3">
+                        <label for="color3"> Azul</label>
+                        <input type="checkbox" id="color4" name="color4">
+                        <label for="color4"> Blanco</label>
+                    </div>
+                    <label class="select-memory" for="select-memory">Almacenamiento</label>
+                    <select name="select-memory" class="select-memory" id="select-memory"></select>
+                    <label class="select-ram" for="select-ram">Memoria RAM</label>
+                    <select name="select-ram" class="select-ram" id="select-ram"></select>
+                    <div class="descripcion-corta">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                    <div class="unidades">
+                        <p>Unidades: 1</p>
+                        <a href="" class="aumentar-unidad">Aumentar</a>
+                        <a href="" class="disminuir-unidad">Disminuir</a>
+                    </div>
+                    <div class="botones-comprar">
+                        <a href="" class="">Comprar ahora</a>
+                        <div class="" onclick="agregarCarrito()">
+                            <i class="bi bi-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="container-caracteristicas">
+                <h2>Caracteristicas</h2>
+                <div class="caracteristicas">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi eveniet ratione earum voluptate consectetur qui eius ea, quod minima cupiditate. Deserunt totam libero ex illum amet officia non laboriosam dicta tempore aperiam, ratione fugit obcaecati maxime ipsa corporis iusto magni fuga repellendus culpa laudantium. Id totam ab quaerat beatae. Quis.</p>
+                </div>
+                <h2>Especificaciones</h2>
+                <div class="especificaciones">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, laboriosam beatae iusto nobis dolore perferendis explicabo voluptatem quasi totam? Aut quaerat earum rerum debitis corporis qui doloremque officia dolore voluptatem!</p>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-subcont-1">
+                    <div class="footer-subs">
+                        <h2>Promociones y Descuentos</h2>
+                        <p>Suscribete a nuestras promociones y descuentos</p>
+                    </div>
+                    <div class="footer-subs-email">
+                        <input type="email" spellcheck="false" placeholder="Email">
+                        <button>Subs</button>
+                    </div>
+                </div>
+                <div class="footer-subcont-2">
+                    <section class="footer-logo">
+                        <h2>
+                            <svg width="28" height="28" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#000000" d="M29.1 27.1c-1.1-.1-2.2.3-3.1 1.1c-1.1 1.1-2.9 1.1-4.1 0c-1-.7-2.1-1.1-3.3-1.1c-1.2-.1-2.4.3-3.3 1.1c-.6.5-1.3.8-2.1.8s-1.5-.3-2.1-.8c-1-.8-2.2-1.2-3.4-1.2s-2.4.4-3.4 1.2c-.6.5-1.5.8-2.3.8v2c1.3.1 2.6-.3 3.6-1.2c.6-.5 1.5-.8 2.3-.8c.7 0 1.5.3 2.1.8c1.8 1.6 4.6 1.6 6.5 0c.6-.5 1.3-.8 2.1-.8c.7 0 1.4.3 2 .8c1.9 1.6 4.6 1.6 6.5 0c.5-.5 1.3-.8 2-.8s1.4.3 1.9.8c.9.7 1.9 1.1 3 1.2v-2c-1 0-1.2-.4-1.7-.8c-.9-.7-2-1.1-3.2-1.1z" class="clr-i-outline clr-i-outline-path-1"/>
+                                <path fill="#000000" d="M6 23c0-.6.5-1 1.1-1H32l-3.5 3.1h.2c.8 0 1.6.2 2.2.5l2.5-2.2l.2-.2c.7-.8.6-2.1-.2-2.8c-.4-.2-.8-.4-1.3-.4h-25c-1.7 0-3 1.3-3 3v3.2c.5-.5 1.2-.8 1.9-1.1V23z" class="clr-i-outline clr-i-outline-path-2"/>
+                                <path fill="#000000" d="M8.9 19H15v-7.8c0-.6-.3-1.2-.8-1.6c-.9-.7-2.2-.5-2.8.4l-4.1 5.9c-.4.6-.4 1.4-.1 2.1c.3.6 1 1 1.7 1zm4.2-7.8L13 17H8.9l4.2-5.8z" class="clr-i-outline clr-i-outline-path-3"/>
+                                <path fill="#000000" d="M26 18c.4-.6.4-1.4 0-2L19.7 5.6c-.4-.6-1-1-1.7-1c-1.1 0-2 .9-2 2V19h8.3c.7 0 1.4-.4 1.7-1zM17.9 6.6l6.4 10.5h-6.4V6.6z" class="clr-i-outline clr-i-outline-path-4"/>
+                                <path fill="none" d="M0 0h36v36H0z"/>
+                            </svg>
+                        </h2>
+                    </section>
+                    <section>
+                        <h3>Productos</h3>
+                        <ul>
+                            <li><a href="#" title="Celulares">Celulares</a></li>
+                            <li><a href="#" title="Tablets">Tablets</a></li>
+                            <li><a href="#" title="Computadores">Computadores</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Soporte</h3>
+                        <ul>
+                            <li><a href="#" title="Servicio">Centro de Servicio</a></li>
+                            <li><a href="#" title="Repuestos">Repuestos</a></li>
+                            <li><a href="#" title="Garantía">Garantía</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Empresa</h3>
+                        <ul>
+                            <li><a href="#" title="Sobre Nosotros">Sobre Nosotros</a></li>
+                            <li><a href="#" title="Contacto">Contacto</a></li>
+                            <li><a href="#" title="Política de Privacidad">Política de Privacidad</a></li>
+                            <li><a href="#" title="Términos de Uso">Términos de Uso</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="footer-subcont-3">
+                    <div class='social-networks'>
+                        <ul>
+                            <li><a href="#" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+                            <li><a href="#" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#" title="YouTube"><i class="bi bi-youtube"></i></i></a></li>
+                        </ul>
+                    </div>
+                    <small>ⓒ Py Team 2023, todos los derechos reservados.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
