@@ -209,7 +209,12 @@ main {
     transition: all .3s ease;
 }
 
-#select-marca:hover, #select-resolucion:hover, #select-camara:hover, #select-almacenamiento:hover {
+#select-marca:hover,
+#select-resolucion:hover,
+#select-camara:hover,
+#select-almacenamiento:hover,
+#select-ram:hover,
+#select-memory:hover {
     background-color: rgb(0, 0, 0, 0.08);
     transition: all .3s ease;
 }
@@ -652,7 +657,7 @@ figcaption p {
     background-color: rgba(229, 229, 229, 0.55);
     border-radius: 0px 15px 15px 0px;
     border: 1px solid #D8DBDD;
-    padding: 10px;
+    padding: 16px 20px 7px;
     gap: 0.6em;
 }
 
@@ -691,20 +696,134 @@ figcaption p {
     flex-wrap: wrap;
 }
 
-.descripcion-corta {
+.almacenamiento-prod-cel, .ram-prod-cel {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+}
+
+#select-ram, #select-memory {
+    font-size: 11pt;
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    width: 65%;
+    background-color: rgb(245, 245, 245);   
+    border-color: rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.descripcion-corta {
+    font-size: 11pt;
+    display: flex;
+    margin: 5px 0px;
 }
 
 .descripcion-corta ul {
     list-style: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.descripcion-corta li {
+    padding-left: 2em;
+    text-indent: -1.45em;
+}
+
+.unidades {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
+.unidades p {
+    margin-right: 0.3em;
+}
+
+.btn-cantidad {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    background: #d7dbdf;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(88, 88, 88, 0.25);
+    box-shadow: -1px 2px 5px 0px rgb(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-cantidad:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: #7c7f81;
+}
+
+.btn-cantidad i {
+    font-size: 14pt;
 }
 
 .botones-comprar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 15px 0px;
+    gap: 1em;
+    font-size: 11.75pt;
 }
 
+.botones-comprar .btn-1, .botones-comprar .btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-comprar-prods {
+    text-decoration: none;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid rgba(39, 125, 255, 0.6);
+    background-color: rgba(88, 181, 231, 0.7);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-comprar-prods:hover, .btn-carrito-prods:hover {
+    border: 2px solid rgba(39, 125, 255, 0.5);
+    background-color: rgba(88, 181, 231, 0.9);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.btn-carrito-prods {
+    text-decoration: none;
+    color: black;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid rgba(39, 125, 255, 0.6);
+    background-color: rgba(88, 181, 231, 0.7);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.btn-carrito-prods i {
+    font-size: 16pt;
+}
 
 
 .container-caracteristicas {
@@ -903,7 +1022,9 @@ figcaption p {
 
     .container-producto {
         gap: 0.5rem;
-        flex-direction: column;
+        flex-direction: row;
+        width: 85%;
+        flex-wrap: wrap;
     }
 
     .container-imagenes-producto {
@@ -914,8 +1035,10 @@ figcaption p {
 
     .container-datos-producto {
         width: 100%;
-        height: 200px;
         border-radius: 0px 0px 15px 15px;
+        margin: 16px 0px 7px;
+        gap: 0.5em;
+        font-size: 14px;
     }
 
     /* Sobre Nosotros */

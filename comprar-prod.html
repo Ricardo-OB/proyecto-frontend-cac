@@ -73,36 +73,59 @@
                     </div>
                     <p>$ 4.560.000</p>
                     <div class="colores">
-                        <input type="checkbox" id="color1" name="color1">
+                        <input type="radio" id="color1" value="gris" name="colors">
                         <label for="color1"> Gris</label>
-                        <input type="checkbox" id="color2" name="color2">
+                        <input type="radio" id="color2" value="negro" name="colors">
                         <label for="color2"> Negro</label>
-                        <input type="checkbox" id="color3" name="color3">
+                        <input type="radio" id="color3" value="azul" name="colors">
                         <label for="color3"> Azul</label>
-                        <input type="checkbox" id="color4" name="color4">
+                        <input type="radio" id="color4" value="blanco" name="colors">
                         <label for="color4"> Blanco</label>
                     </div>
-                    <label class="select-memory" for="select-memory">Almacenamiento</label>
-                    <select name="select-memory" class="select-memory" id="select-memory"></select>
-                    <label class="select-ram" for="select-ram">Memoria RAM</label>
-                    <select name="select-ram" class="select-ram" id="select-ram"></select>
+                    <div class="almacenamiento-prod-cel">
+                        <label class="select-memory" for="select-memory">Almacenamiento</label>
+                        <select name="select-memory" class="select-memory" id="select-memory">
+                            <option value="volvo">32Gb</option>
+                            <option value="saab" selected>64Gb</option>
+                            <option value="mercedes">128Gb</option>
+                            <option value="audi">256Gb</option>
+                            <option value="audi">512Gb</option>
+                        </select>
+                    </div>
+                    <div class="ram-prod-cel">
+                        <label class="select-ram" for="select-ram">Memoria RAM</label>
+                        <select name="select-ram" class="select-ram" id="select-ram">
+                            <option value="2">2Gb</option>
+                            <option value="4" selected>4Gb</option>
+                            <option value="8">8Gb</option>
+                            <option value="16">16Gb</option>
+                        </select>
+                    </div>
                     <div class="descripcion-corta">
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li class="frases">Lorem ipsum dolor sit amet.</li>
+                            <li class="frases">Lorem ipsum dolor sit amet.</li>
+                            <li class="frases">Lorem ipsum dolor sit amet.</li>
+                            <li class="frases">Lorem ipsum dolor sit amet.</li>
                         </ul>
                     </div>
                     <div class="unidades">
-                        <p>Unidades: 1</p>
-                        <a href="" class="aumentar-unidad">Aumentar</a>
-                        <a href="" class="disminuir-unidad">Disminuir</a>
+                        <p>Unidades: <span id="unidades-cel"></span></p>
+                        <div class="btn-cantidad" onclick="disminuirUnidad()">
+                            <i class="bi bi-dash"></i>
+                        </div>
+                        <div class="btn-cantidad" onclick="aumentarUnidad()">
+                            <i class="bi bi-plus"></i>
+                        </div>
                     </div>
                     <div class="botones-comprar">
-                        <a href="" class="">Comprar ahora</a>
-                        <div class="" onclick="agregarCarrito()">
-                            <i class="bi bi-cart-plus"></i>
+                        <div class="btn-1">
+                            <a class="btn-comprar-prods" href="">Comprar ahora</a>
+                        </div>
+                        <div class="btn-2" onclick="agregarCarrito()">
+                            <a class="btn-carrito-prods" href="" ><i class="bi bi-cart-plus"></i>
+                            Agregar al carrito
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -188,5 +211,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/prod-celulares.js"></script>
 </body>
 </html>
