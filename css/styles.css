@@ -642,12 +642,24 @@ figcaption p {
 
 .container-imagenes-producto {
     display: flex;
+    flex-direction: row;
     width: 60%;
-    /* height: 450px; */
+    height: auto;
     background-color: rgba(229, 229, 229, 0.55);
     border-radius: 15px 0px 0px 15px;
     border: 1px solid #D8DBDD;
 }
+
+.splide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.splide__track {
+    text-align: center;
+}
+
 
 .container-datos-producto {
     display: flex;
@@ -793,14 +805,14 @@ figcaption p {
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
     cursor: pointer;
-    border: 2px solid rgba(39, 125, 255, 0.6);
+    border: 2px solid rgba(39, 125, 255, 0.25);
     background-color: rgba(88, 181, 231, 0.7);
     transition: all 0.3s ease;
     text-align: center;
 }
 
 .btn-comprar-prods:hover, .btn-carrito-prods:hover {
-    border: 2px solid rgba(39, 125, 255, 0.5);
+    border: 2px solid rgba(39, 125, 255, 0.35);
     background-color: rgba(88, 181, 231, 0.9);
     transition: all 0.3s ease;
     transform: scale(1.05);
@@ -812,7 +824,7 @@ figcaption p {
     padding: 0.6rem 0.8rem;
     border-radius: 8px;
     cursor: pointer;
-    border: 2px solid rgba(39, 125, 255, 0.6);
+    border: 2px solid rgba(39, 125, 255, 0.25);
     background-color: rgba(88, 181, 231, 0.7);
     transition: all 0.3s ease;
     text-align: center;

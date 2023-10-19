@@ -56,3 +56,15 @@ function borrarCarrito() {
     textoCarrito.innerText = contadorProductos;
     sessionStorage.setItem("contProductos", contadorProductos);
 }
+
+// Guardar nombre producto con sessionStorage
+
+const botonesComprar = document.getElementsByClassName("btn-comprar-prod");
+for (const element of botonesComprar) {
+    element.addEventListener("onclick", guardarNombre);
+}
+
+function guardarNombre(id) {
+    let nombreProducto = document.getElementById(id.slice(4)).innerText;
+    sessionStorage.setItem("nombreProd", nombreProducto)
+}

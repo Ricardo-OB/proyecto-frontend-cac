@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    
     <title>Producto</title>
 </head>
 <body>
@@ -57,10 +60,20 @@
         <section class="seccion-producto">
             <div class="container-producto">
                 <div class="container-imagenes-producto">
-
+                    
+                    <section id="main-slider" class="splide" aria-label="imagenes">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img class="img-slide" src="img/" alt="cel1"></li>
+                                <li class="splide__slide"><img class="img-slide" src="img/" alt="cel2"></li>
+                                <li class="splide__slide"><img class="img-slide" src="img/" alt="cel3"></li>
+                            </ul>
+                        </div>
+                    </section>
+                    
                 </div>
                 <div class="container-datos-producto">
-                    <h2>Nombre del Producto</h2>
+                    <h2 id="nombre-producto">Nombre del Producto</h2>
                     <div class="calification">
                         <ul>
                             <li><i class="bi bi-star-fill"></i></li>
@@ -71,7 +84,7 @@
                         </ul>
                         <p>32 Calificaciones</p>
                     </div>
-                    <p>$ 4.560.000</p>
+                    <p id="precio-prod">$ 1.111.111</p>
                     <div class="colores">
                         <input type="radio" id="color1" value="gris" name="colors">
                         <label for="color1"> Gris</label>
