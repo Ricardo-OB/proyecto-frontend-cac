@@ -25,8 +25,10 @@
                 <div class="icono-2">
                     <i class="bi bi-cart"></i>
                     <p id="cont-carrito" title="Presiona para borrar" onclick="borrarCarrito()"></p>
-                    <i class="bi bi-person-circle"></i>
-                    <p>Login</p>
+                    <div id="login" onclick="guardarUsuario()">
+                        <i class="bi bi-person-circle"></i>
+                        <p id="nombre-usuario">Login</p>
+                    </div>
                 </div>
             </div>
             <div class="grid-second-level">
@@ -41,7 +43,7 @@
                         <li><a class="enlace-celulares" href="celulares.html">Celulares</a></li>
                         <li><a class="enlace-tablets" href="tablets.html">Tablets</a></li>
                         <li><a class="" href="#">Computadoras</a></li>
-                        <li><a class="enlace-sobre-nosotros" href="#">Sobre Nosotros</a></li>
+                        <li><a class="enlace-sobre-nosotros" href="sobre-nosotros.html">Sobre Nosotros</a></li>
                         <li><a class="" href="#">Contacto</a></li>
                     </ul>
                 </div>
@@ -85,11 +87,11 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/tablets/huawei-matepad-se-1.jpg" alt="Huawei MatePad SE"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/huawei-matepad-se-1.jpg" alt="Huawei MatePad SE"></div>
                     <div class="card-content">
                         <h2 class="card-title" id="nombre-tab-1">Huawei MatePad SE</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
                                 <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-1" onclick="guardarNombre(id)">Conocer más</a> 
                             </div>
@@ -103,16 +105,16 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/celulares/HuaweiP50Pro-1.jpg" alt="huawei p50 pro"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/huawei-matepad-11-1.jpg" alt="Huawei MatePad 11"></div>
                     <div class="card-content">
-                        <h2 class="card-title" id="nombre-cel-2">Huawei P50 Pro</h2>
+                        <h2 class="card-title" id="nombre-tab-2">Huawei MatePad 11</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
-                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-2" onclick="guardarNombre(id)">Conocer más</a> 
+                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-2" onclick="guardarNombre(id)">Conocer más</a> 
                             </div>
                             <div class="btn-2">
-                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-cel-2" onclick="guardarNombre(id)">Comprar</a>
+                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-tab-2" onclick="guardarNombre(id)">Comprar</a>
                             </div>
                         </div>
                       </div>
@@ -121,16 +123,16 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/celulares/samsung-galaxy-S21.jpg" alt="samsung galaxy s21"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/xiaomi-pad5-1.jpeg" alt="Xiaomi Pad 5"></div>
                     <div class="card-content">
-                        <h2 class="card-title" id="nombre-cel-3">Samsung Galaxy S21 FE</h2>
+                        <h2 class="card-title" id="nombre-tab-3">Xiaomi Pad 5</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
-                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-3" onclick="guardarNombre(id)">Conocer más</a>
+                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-3" onclick="guardarNombre(id)">Conocer más</a>
                             </div>
                             <div class="btn-2">
-                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-cel-3" onclick="guardarNombre(id)">Comprar</a>
+                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-tab-3" onclick="guardarNombre(id)">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -139,16 +141,16 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/celulares/redmi12pro-1.jpg" alt="iphone 15"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/ipad-pro-1.jpg" alt="iPad Pro"></div>
                     <div class="card-content">
-                        <h2 class="card-title" id="nombre-cel-4">Redmi Note 12 Pro</h2>
+                        <h2 class="card-title" id="nombre-tab-4">iPad Pro</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
-                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-4" onclick="guardarNombre(id)">Conocer más</a>
+                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-4" onclick="guardarNombre(id)">Conocer más</a>
                             </div>
                             <div class="btn-2">
-                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-cel-4" onclick="guardarNombre(id)">Comprar</a>
+                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-tab-4" onclick="guardarNombre(id)">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -157,16 +159,16 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/celulares/huawei-nova10-pro.png" alt="huawei nova 10 pro"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/ipad-air-1.jpeg" alt="iPad Air"></div>
                     <div class="card-content">
-                        <h2 class="card-title" id="nombre-cel-5">Huawei Nova 10 Pro</h2>
+                        <h2 class="card-title" id="nombre-tab-5">iPad Air</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
-                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-5" onclick="guardarNombre(id)">Conocer más</a>
+                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-5" onclick="guardarNombre(id)">Conocer más</a>
                             </div>
                             <div class="btn-2">
-                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-cel-5" onclick="guardarNombre(id)">Comprar</a>
+                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-tab-5" onclick="guardarNombre(id)">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -175,16 +177,16 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/celulares/motorola40ultra-1.png" alt="Motorola Razr 40 Ultra"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/galaxy-tab-s9-1.jpg" alt="Samsung Galaxy Tab S9"></div>
                     <div class="card-content">
-                        <h2 class="card-title" id="nombre-cel-6">Motorola Razr 40 Ultra</h2>
+                        <h2 class="card-title" id="nombre-tab-6">Samsung Galaxy Tab S9</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
-                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-6" onclick="guardarNombre(id)">Conocer más</a>
+                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-6" onclick="guardarNombre(id)">Conocer más</a>
                             </div>
                             <div class="btn-2">
-                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-cel-6" onclick="guardarNombre(id)">Comprar</a>
+                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-tab-6" onclick="guardarNombre(id)">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -193,16 +195,16 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/celulares/motorolag84-1.png" alt="Motorola Edge 40 Neo"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/galaxy-tab-a8-1.jpg" alt="Samsung Galaxy Tab A8"></div>
                     <div class="card-content">
-                        <h2 class="card-title" id="nombre-cel-7">Motorola Edge 40 Neo</h2>
+                        <h2 class="card-title" id="nombre-tab-7">Samsung Galaxy Tab A8</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
-                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-7" onclick="guardarNombre(id)">Conocer más</a>
+                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-7" onclick="guardarNombre(id)">Conocer más</a>
                             </div>
                             <div class="btn-2">
-                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-cel-7" onclick="guardarNombre(id)">Comprar</a>
+                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-tab-7" onclick="guardarNombre(id)">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -211,16 +213,16 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/celulares/galaxy-flip5-1.jpg" alt="Samsung Galaxy Z Flip5"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/lenovo-p11-1.jpg" alt="Lenovo P11"></div>
                     <div class="card-content">
-                        <h2 class="card-title" id="nombre-cel-8">Samsung Galaxy Z Flip5</h2>
+                        <h2 class="card-title" id="nombre-tab-8">Lenovo P11</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
-                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-8" onclick="guardarNombre(id)">Conocer más</a>
+                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-8" onclick="guardarNombre(id)">Conocer más</a>
                             </div>
                             <div class="btn-2">
-                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-cel-8" onclick="guardarNombre(id)">Comprar</a>
+                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-tab-8" onclick="guardarNombre(id)">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -229,16 +231,16 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/celulares/galaxy-s22-ultra-1.jpg" alt="Samsung Galaxy S22 Ultra"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/huawei-matepad-se-1.jpg" alt="Huawei MatePad SE"></div>
                     <div class="card-content">
-                        <h2 class="card-title" id="nombre-cel-9">Samsung Galaxy S22 Ultra</h2>
+                        <h2 class="card-title" id="nombre-tab-9">Huawei MatePad SE</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
-                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-9" onclick="guardarNombre(id)">Conocer más</a>
+                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-9" onclick="guardarNombre(id)">Conocer más</a>
                             </div>
                             <div class="btn-2">
-                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-cel-9" onclick="guardarNombre(id)">Comprar</a>
+                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-tab-9" onclick="guardarNombre(id)">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -247,16 +249,16 @@
                     <div class="little-car" onclick="agregarCarrito()">
                         <i class="bi bi-cart-plus"></i>
                     </div>
-                    <div class="card-image"><img src="img/celulares/iphone15pro-1.jpg" alt="iphone 15 pro"></div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/huawei-matepad-11-1.jpg" alt="Huawei MatePad 11"></div>
                     <div class="card-content">
-                        <h2 class="card-title" id="nombre-cel-10">iPhone 15 Pro</h2>
+                        <h2 class="card-title" id="nombre-tab-10">Huawei MatePad 11</h2>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
-                        <div class="botones-cel">
+                        <div class="botones-prods">
                             <div class="btn-1">
-                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-10" onclick="guardarNombre(id)">Conocer más</a>
+                                <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-10" onclick="guardarNombre(id)">Conocer más</a>
                             </div>
                             <div class="btn-2">
-                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-cel-10" onclick="guardarNombre(id)">Comprar</a>
+                                <a class="btn-card" href="comprar-prod.html" id="btn-nombre-tab-10" onclick="guardarNombre(id)">Comprar</a>
                             </div>
                         </div>
                     </div>

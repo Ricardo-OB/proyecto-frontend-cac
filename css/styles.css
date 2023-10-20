@@ -53,12 +53,25 @@ html {
     padding: 35px 25px 25px 25px;
 }
 
-.icono-2 > i, .icono-2 > p {
+.icono-2 > i, .icono-2 > p, #login > i, #login > p {
     padding-left: 15px;
 }
 
 .bi-cart, .bi-person-circle {
     font-size: 17pt;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.2s ease-in-out;
+}
+
+#login:hover {
+    cursor: pointer;
+    transform: scale(1.075);
+    transition: all 0.2s ease-in-out;
 }
 
 .bar-paginas {
@@ -263,6 +276,11 @@ main {
     max-height: 100%;
     vertical-align: middle;
 }
+
+.cimage-tablet > img {
+    min-height: 240px;
+    max-height: 240px;
+}
   
 .card-content {
     padding: 1rem;
@@ -289,20 +307,20 @@ main {
     text-align: center;
 }
 
-.botones-cel {
+.botones-prods {
     display: flex;
     flex-direction: row;
     width: 90%;
     margin-bottom: 6px;
 }
 
-.botones-cel .btn-1 {
+.botones-prods .btn-1 {
     width: 60%;
     display: flex;
     justify-content: center;
 }
 
-.botones-cel .btn-2 {
+.botones-prods .btn-2 {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -617,6 +635,7 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: right;
+    align-items: center;
 }
 
 figcaption p {
@@ -679,10 +698,20 @@ figcaption p {
     background: rgb(177, 175, 175);
 }
 
+.splide__list {
+    height: 100%;
+    align-items: center;
+}
+
+.splide__slide img {
+    max-width: 100%;
+}
+
 
 .container-datos-producto {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 40%;
     /* height: 450px; */
     background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(200, 18%, 97%, 1) 41%, hsla(192, 15%, 94%, 1) 72%);
@@ -692,7 +721,7 @@ figcaption p {
     gap: 0.6em;
 }
 
-.container-datos-producto > p{
+.container-datos-producto > p {
     font-size: 18pt;
     font-weight: bold;
 }

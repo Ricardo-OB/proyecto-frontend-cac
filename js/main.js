@@ -13,7 +13,7 @@ function activarMenuH() {
 
 // Hover carrito
 
-const cards = document.getElementsByClassName("card-celular");
+const cards = document.getElementsByClassName("card-producto");
 const carritos = document.getElementsByClassName("little-car");
 
 for (let i=0; i<cards.length; i++) {
@@ -67,4 +67,19 @@ for (const element of botonesComprar) {
 function guardarNombre(id) {
     let nombreProducto = document.getElementById(id.slice(4)).innerText;
     sessionStorage.setItem("nombreProd", nombreProducto)
+}
+
+// Guardar nombre de usuario
+
+const usuarioElemento = document.getElementById("nombre-usuario");
+usuarioElemento.addEventListener("onclick", guardarUsuario);
+
+if (sessionStorage.getItem("nombreUser")) {
+    usuarioElemento.innerText = sessionStorage.getItem("nombreUser");
+}
+
+function guardarUsuario() {
+    let name = prompt("Ingrese su nombre de usuario: ")
+    sessionStorage.setItem("nombreUser", name)
+    usuarioElemento.innerText = sessionStorage.getItem("nombreUser");
 }
