@@ -79,7 +79,7 @@ if (sessionStorage.getItem("nombreProd")) {
     tituloProd.innerText = nombre;
 }
 
-// Imagenes y precios celulares
+// Imagenes y precios (celulares, tablets, laptops)
 
 let images = {  "Redmi Note 12 Pro": ["img/celulares/redmi12pro-1.jpg", "img/celulares/redmi12pro-2.jpg", "img/celulares/redmi12pro-3.jpg"],
                 "Samsung Galaxy S21 FE": ["img/celulares/samsung-galaxy-S21.jpg", "img/celulares/samsung-galaxy-S21-2.jpg", "img/celulares/samsung-galaxy-S21-3.jpg"],
@@ -98,7 +98,18 @@ let images = {  "Redmi Note 12 Pro": ["img/celulares/redmi12pro-1.jpg", "img/cel
                 "iPad Air": ["img/tablets/ipad-air-1.jpeg", "img/tablets/ipad-air-2.jpeg", "img/tablets/ipad-air-3.jpeg"],
                 "Samsung Galaxy Tab S9": ["img/tablets/galaxy-tab-s9-1.jpg", "img/tablets/galaxy-tab-s9-2.jpg", "img/tablets/galaxy-tab-s9-3.jpg"],
                 "Samsung Galaxy Tab A8": ["img/tablets/galaxy-tab-a8-1.jpg", "img/tablets/galaxy-tab-a8-2.jpg", "img/tablets/galaxy-tab-a8-3.jpg"], 
-                "Lenovo P11": ["img/tablets/lenovo-p11-1.jpg", "img/tablets/lenovo-p11-2.jpg", "img/tablets/lenovo-p11-3.jpg"] }
+                "Lenovo P11": ["img/tablets/lenovo-p11-1.jpg", "img/tablets/lenovo-p11-2.jpg", "img/tablets/lenovo-p11-3.jpg"],
+            
+                "Razer Blade 17": ["img/computadores/razer-blade-17-1.jpg", "img/computadores/razer-blade-17-2.jpg", "img/computadores/razer-blade-17-3.jpg"],
+                "Razer Blade 14": ["img/computadores/razer-blade-14-1.jpg", "img/computadores/razer-blade-14-2.jpg", "img/computadores/razer-blade-14-3.jpg"],
+                "": [],
+                "": [],
+                "": [],
+                "": [],
+                "": [],
+                "": [],
+                "": [],
+                "": []}
 
 let precios = { "Redmi Note 12 Pro": '$ 3.256.000',
                 "Samsung Galaxy S21 FE": '$ 2.599.920',
@@ -117,7 +128,18 @@ let precios = { "Redmi Note 12 Pro": '$ 3.256.000',
                 "iPad Air": "$ 4.539.000",
                 "Samsung Galaxy Tab S9": "$ 5.099.900",
                 "Samsung Galaxy Tab A8": "$ 892.900",
-                "Lenovo P11": "$ 1.899.000" }
+                "Lenovo P11": "$ 1.899.000",
+            
+                "Razer Blade 17": "$ 8.465.000",
+                "Razer Blade 14": "$ 7.614.000",
+                "": "$ ",
+                "": "$ ",
+                "": "$ ",
+                "": "$ ",
+                "": "$ ",
+                "": "$ ",
+                "": "$ ",
+                "": "$ "}
 
 const imagenesProds = document.getElementsByClassName("img-slide");
 

@@ -183,14 +183,14 @@ main {
 }
 
 
-.seccion-celulares, .seccion-tablets, .seccion-sobre-nosotros {
+.seccion-celulares, .seccion-tablets, .seccion-laptops, .seccion-sobre-nosotros {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 40px 130px 30px;
 }
 
-.seccion-celulares h1, .seccion-tablets h1, .seccion-sobre-nosotros h1 {
+.seccion-celulares h1, .seccion-tablets h1, .seccion-laptops h1, .seccion-sobre-nosotros h1 {
     margin: 8px 0px;
     font-size: 40pt;
 }
@@ -207,16 +207,28 @@ main {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.resol-2, .cam-2, .memory-2 {
+.filtros-laptops {
+    margin: 13px 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.resol-2, .cam-2, .memory-2, .ram-2, .procesadores-2, .grafica-2 {
     display: none;
 }
 
-.filtros-celulares > label, .filtros-tablets > label {
+.filtros-celulares > label, .filtros-tablets > label, .filtros-laptops > label {
     margin: 0px 0px 8px 5px;
     font-weight: bold;
 }
 
-#select-marca, #select-resolucion, #select-camara, #select-almacenamiento {
+#select-marca,
+#select-resolucion,
+#select-camara,
+#select-almacenamiento,
+#select-ram,
+#select-gpu,
+#select-procesador {
     font-size: 12pt;
     padding: 10px 8px;
     border-radius: 10px;
@@ -228,12 +240,18 @@ main {
     transition: all .3s ease;
 }
 
+.select-lap {
+    width: 90% !important;
+}
+
 #select-marca:hover,
 #select-resolucion:hover,
 #select-camara:hover,
 #select-almacenamiento:hover,
 #select-ram:hover,
-#select-memory:hover {
+#select-memory:hover,
+#select-gpu:hover,
+#select-procesador:hover {
     background-color: rgb(0, 0, 0, 0.08);
     transition: all .3s ease;
 }
@@ -953,28 +971,28 @@ figcaption p {
 
     /* Seccion celulares, tablets, */
 
-    .seccion-celulares, .seccion-tablets {
+    .seccion-celulares, .seccion-tablets, .seccion-laptops {
         margin: 5px 0px 5px;
     }
 
-    .seccion-celulares > h1, .seccion-tablets > h1 {
+    .seccion-celulares > h1, .seccion-tablets > h1, .seccion-laptops > h1 {
         margin: 0px;
     }
 
-    .filtros-celulares, .filtros-tablets {
+    .filtros-celulares, .filtros-tablets, .filtros-laptops {
         margin: 0px 10px;
         grid-template-columns: 1fr;
     }
 
-    .resol-1, .cam-1, .memory-1 {
+    .resol-1, .cam-1, .memory-1, .grafica-1, .procesadores-1, .ram-1 {
         display: none;
     }
 
-    .resol-2, .cam-2, .memory-2 {
+    .resol-2, .cam-2, .memory-2, .grafica-2, .procesadores-2, .ram-2 {
         display: flex;
     }
 
-    .filtros-celulares > label, .filtros-tablets > label {
+    .filtros-celulares > label, .filtros-tablets > label, .filtros-laptops > label {
         margin: 5px;
         padding: 10px 3px 5px;
     }
@@ -1000,12 +1018,12 @@ figcaption p {
         margin-bottom: 7px;
     }
 
-    .seccion-celulares h1, .seccion-tablets h1, .seccion-sobre-nosotros h1 {
+    .seccion-celulares h1, .seccion-tablets h1, .seccion-laptops h1, .seccion-sobre-nosotros h1 {
         font-size: 25pt;
         text-align: center;
     }
 
-    #select-marca, #select-resolucion, #select-camara, #select-almacenamiento {
+    #select-marca, #select-resolucion, #select-camara, #select-almacenamiento, #select-procesador, #select-gpu, #select-ram {
         font-size: 15px;
         padding: 5px 4px;
     }
