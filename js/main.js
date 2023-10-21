@@ -66,7 +66,7 @@ for (const element of botonesComprar) {
 
 function guardarNombre(id) {
     let nombreProducto = document.getElementById(id.slice(4)).innerText;
-    sessionStorage.setItem("nombreProd", nombreProducto)
+    sessionStorage.setItem("nombreProd", nombreProducto);
 }
 
 // Guardar nombre de usuario
@@ -82,4 +82,19 @@ function guardarUsuario() {
     let name = prompt("Ingrese su nombre de usuario: ")
     sessionStorage.setItem("nombreUser", name)
     usuarioElemento.innerText = sessionStorage.getItem("nombreUser");
+}
+
+// Guardar tipo de producto para mostrar info en comprar-prod
+
+const botonesInfo = document.getElementsByClassName("btn-info-prod");
+for (const element of botonesInfo) {
+    element.addEventListener("onclick", guardarTipoInfo);
+}
+
+function guardarTipoInfo(id) {
+    let tipoProducto = id.slice(11, 14);
+    sessionStorage.setItem("tipoProducto", tipoProducto);
+
+    let nombreProducto = document.getElementById(id.slice(4)).innerText;
+    sessionStorage.setItem("nombreProd", nombreProducto)
 }
