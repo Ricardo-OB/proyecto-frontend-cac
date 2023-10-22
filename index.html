@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="grid-first-level">
+                <div class="icono">
+                    <svg width="28" height="28" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#000000" d="M29.1 27.1c-1.1-.1-2.2.3-3.1 1.1c-1.1 1.1-2.9 1.1-4.1 0c-1-.7-2.1-1.1-3.3-1.1c-1.2-.1-2.4.3-3.3 1.1c-.6.5-1.3.8-2.1.8s-1.5-.3-2.1-.8c-1-.8-2.2-1.2-3.4-1.2s-2.4.4-3.4 1.2c-.6.5-1.5.8-2.3.8v2c1.3.1 2.6-.3 3.6-1.2c.6-.5 1.5-.8 2.3-.8c.7 0 1.5.3 2.1.8c1.8 1.6 4.6 1.6 6.5 0c.6-.5 1.3-.8 2.1-.8c.7 0 1.4.3 2 .8c1.9 1.6 4.6 1.6 6.5 0c.5-.5 1.3-.8 2-.8s1.4.3 1.9.8c.9.7 1.9 1.1 3 1.2v-2c-1 0-1.2-.4-1.7-.8c-.9-.7-2-1.1-3.2-1.1z" class="clr-i-outline clr-i-outline-path-1"/>
+                        <path fill="#000000" d="M6 23c0-.6.5-1 1.1-1H32l-3.5 3.1h.2c.8 0 1.6.2 2.2.5l2.5-2.2l.2-.2c.7-.8.6-2.1-.2-2.8c-.4-.2-.8-.4-1.3-.4h-25c-1.7 0-3 1.3-3 3v3.2c.5-.5 1.2-.8 1.9-1.1V23z" class="clr-i-outline clr-i-outline-path-2"/>
+                        <path fill="#000000" d="M8.9 19H15v-7.8c0-.6-.3-1.2-.8-1.6c-.9-.7-2.2-.5-2.8.4l-4.1 5.9c-.4.6-.4 1.4-.1 2.1c.3.6 1 1 1.7 1zm4.2-7.8L13 17H8.9l4.2-5.8z" class="clr-i-outline clr-i-outline-path-3"/>
+                        <path fill="#000000" d="M26 18c.4-.6.4-1.4 0-2L19.7 5.6c-.4-.6-1-1-1.7-1c-1.1 0-2 .9-2 2V19h8.3c.7 0 1.4-.4 1.7-1zM17.9 6.6l6.4 10.5h-6.4V6.6z" class="clr-i-outline clr-i-outline-path-4"/>
+                        <path fill="none" d="M0 0h36v36H0z"/>
+                    </svg>
+                    <p><b>Tech Store</b></p>
+                </div>
+                <div class="icono-2">
+                    <i class="bi bi-cart"></i>
+                    <p id="cont-carrito" title="Presiona para borrar" onclick="borrarCarrito()"></p>
+                    <div id="login" onclick="guardarUsuario()">
+                        <i class="bi bi-person-circle"></i>
+                        <p id="nombre-usuario">Login</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-second-level">
+                <div class="bar-paginas">
+                    <div class="wrap-menu">
+                        <a class="icon-menu" onclick="activarMenuH()">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+                    <ul class="paginas">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="enlace-celulares" href="celulares.html">Celulares</a></li>
+                        <li><a class="enlace-tablets" href="tablets.html">Tablets</a></li>
+                        <li><a class="enlace-laptops" href="laptops.html">Laptops</a></li>
+                        <li><a class="enlace-sobre-nosotros" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a class="" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor-productos-destacados">
+            <div class="card-titulo">
+                <h2 >DESTACADOS DE LA SEMANA</h2>
+            </div>
+            <div class="container-cards">
+                <div class="card-producto">
+                    <div class="little-car" onclick="agregarCarrito()">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                    <div class="card-image cimage-laptop"><img src="img/computadores/tuf-a15-1.png" alt="Asus TUF Gaming A15"></div>
+                    <div class="card-content">
+                        <h2 class="card-title" id="nombre-lap-11">Asus TUF Gaming A15</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <div class="botones-prods">
+                            <div class="btn-1">
+                                <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-11" onclick="guardarTipoInfo(id)">Conocer más</a>
+                            </div>
+                            <div class="btn-2">
+                                <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-11" onclick="guardarNombre(id)">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="little-car" onclick="agregarCarrito()">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                    <div class="card-image"><img src="img/celulares/redmi12pro-1.jpg" alt="iphone 15"></div>
+                    <div class="card-content">
+                        <h2 class="card-title" id="nombre-cel-4">Redmi Note 12 Pro</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <div class="botones-prods">
+                            <div class="btn-1">
+                                <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-4" onclick="guardarTipoInfo(id)">Conocer más</a>
+                            </div>
+                            <div class="btn-2">
+                                <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-4" onclick="guardarNombre(id)">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="little-car" onclick="agregarCarrito()">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/xiaomi-pad5-1.jpeg" alt="Xiaomi Pad 5"></div>
+                    <div class="card-content">
+                        <h2 class="card-title" id="nombre-tab-3">Xiaomi Pad 5</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <div class="botones-prods">
+                            <div class="btn-1">
+                                <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-3" onclick="guardarTipoInfo(id)">Conocer más</a>
+                            </div>
+                            <div class="btn-2">
+                                <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-3" onclick="guardarNombre(id)">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="little-car" onclick="agregarCarrito()">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                    <div class="card-image"><img src="img/celulares/iphone15pro-1.jpg" alt="iphone 15 pro"></div>
+                    <div class="card-content">
+                        <h2 class="card-title" id="nombre-cel-10">iPhone 15 Pro</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <div class="botones-prods">
+                            <div class="btn-1">
+                                <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-10" onclick="guardarTipoInfo(id)">Conocer más</a>
+                            </div>
+                            <div class="btn-2">
+                                <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-10" onclick="guardarNombre(id)">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="little-car" onclick="agregarCarrito()">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                    <div class="card-image cimage-tablet"><img src="img/tablets/lenovo-p11-1.jpg" alt="Lenovo P11"></div>
+                    <div class="card-content">
+                        <h2 class="card-title" id="nombre-tab-8">Lenovo P11</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <div class="botones-prods">
+                            <div class="btn-1">
+                                <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-8" onclick="guardarTipoInfo(id)">Conocer más</a>
+                            </div>
+                            <div class="btn-2">
+                                <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-8" onclick="guardarNombre(id)">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="little-car" onclick="agregarCarrito()">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                    <div class="card-image cimage-laptop"><img src="img/computadores/legion-slim5-1.jpg" alt="Lenovo Legion Slim 5"></div>
+                    <div class="card-content">
+                        <h2 class="card-title" id="nombre-lap-6">Lenovo Legion Slim 5</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                        <div class="botones-prods">
+                            <div class="btn-1">
+                                <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-6" onclick="guardarTipoInfo(id)">Conocer más</a>
+                            </div>
+                            <div class="btn-2">
+                                <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-6" onclick="guardarNombre(id)">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-categories">
+                <div class="card-categoria">
+                    <div class="card-titulo">
+                        <a class="enlace-celulares" href="celulares.html">PHONES / CELULARES</a>
+                    </div>
+                    <div class="container-cards">
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/iphone15pro-1.jpg" alt="iphone 15 pro"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-1">iPhone 15 Pro</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-1" onclick="guardarTipoInfo(id)">Conocer más</a> 
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-1" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/HuaweiP50Pro-1.jpg" alt="huawei p50 pro"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-2">Huawei P50 Pro</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-2" onclick="guardarTipoInfo(id)">Conocer más</a> 
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-2" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/samsung-galaxy-S21.jpg" alt="samsung galaxy s21"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-3">Samsung Galaxy S21 FE</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-3" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-3" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/redmi12pro-1.jpg" alt="iphone 15"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-4">Redmi Note 12 Pro</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-4" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-4" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/huawei-nova10-pro.png" alt="huawei nova 10 pro"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-5">Huawei Nova 10 Pro</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-5" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-5" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/motorola40ultra-1.png" alt="Motorola Razr 40 Ultra"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-6">Motorola Razr 40 Ultra</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-6" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-6" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/motorolag84-1.png" alt="Motorola Edge 40 Neo"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-7">Motorola Edge 40 Neo</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-7" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-7" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/galaxy-flip5-1.jpg" alt="Samsung Galaxy Z Flip5"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-8">Samsung Galaxy Z Flip5</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-8" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-8" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/galaxy-s22-ultra-1.jpg" alt="Samsung Galaxy S22 Ultra"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-9">Samsung Galaxy S22 Ultra</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-9" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-9" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/iphone15pro-1.jpg" alt="iphone 15 pro"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-10">iPhone 15 Pro</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-10" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-10" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/HuaweiP50Pro-1.jpg" alt="huawei p50 pro"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-11">Huawei P50 Pro</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-11" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-11" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/redmi12pro-1.jpg" alt="iphone 15"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-12">Redmi Note 12 Pro</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-12" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-12" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image"><img src="img/celulares/huawei-nova10-pro.png" alt="huawei nova 10 pro"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-cel-13">Huawei Nova 10 Pro</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-cel-13" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-cel-13" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-categoria">
+                    <div class="card-titulo">
+                        <a class="enlace-tablets" href="tablets.html">TABLETS / TABLETA</a>
+                    </div>
+                    <div class="container-cards">
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/huawei-matepad-se-1.jpg" alt="Huawei MatePad SE"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-1">Huawei MatePad SE</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-1" onclick="guardarTipoInfo(id)">Conocer más</a> 
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-1" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/huawei-matepad-11-1.jpg" alt="Huawei MatePad 11"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-2">Huawei MatePad 11</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-2" onclick="guardarTipoInfo(id)">Conocer más</a> 
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-2" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/xiaomi-pad5-1.jpeg" alt="Xiaomi Pad 5"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-3">Xiaomi Pad 5</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-3" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-3" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/ipad-pro-1.jpg" alt="iPad Pro"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-4">iPad Pro</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-4" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-4" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/ipad-air-1.jpeg" alt="iPad Air"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-5">iPad Air</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-5" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-5" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/galaxy-tab-s9-1.jpg" alt="Samsung Galaxy Tab S9"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-6">Samsung Galaxy Tab S9</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-6" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-6" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/galaxy-tab-a8-1.jpg" alt="Samsung Galaxy Tab A8"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-7">Samsung Galaxy Tab A8</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-7" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-7" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/lenovo-p11-1.jpg" alt="Lenovo P11"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-8">Lenovo P11</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-8" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-8" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/huawei-matepad-se-1.jpg" alt="Huawei MatePad SE"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-9">Huawei MatePad SE</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-9" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-9" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-tablet"><img src="img/tablets/huawei-matepad-11-1.jpg" alt="Huawei MatePad 11"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-tab-10">Huawei MatePad 11</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-tab-10" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-tab-10" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-categoria">
+                    <div class="card-titulo">
+                        <a class="enlace-laptops" href="laptops.html">LAPTOPS / PORTATILES</a>
+                    </div>
+                    <div class="container-cards">
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/razer-blade-17-1.jpg" alt="Razer Blade 17"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-1">Razer Blade 17</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-1" onclick="guardarTipoInfo(id)">Conocer más</a> 
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-1" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/razer-blade-14-1.jpg" alt="Razer Blade 14"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-2">Razer Blade 14</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-2" onclick="guardarTipoInfo(id)">Conocer más</a> 
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-2" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/rog-strix-16-1.png" alt="Asus Rog Strix G16"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-3">Asus Rog Strix G16</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-3" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-3" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/rog-zephyrus-duo16-1.png" alt="Asus ROG Zephyrus Duo 16"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-4">Asus ROG Zephyrus Duo 16</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-4" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-4" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/legion-7-1.jpg" alt="Lenovo Legion 7"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-5">Lenovo Legion 7</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-5" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-5" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/legion-slim5-1.jpg" alt="Lenovo Legion Slim 5"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-6">Lenovo Legion Slim 5</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-6" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-6" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/msi-stealth-1.png" alt="MSI Stealth 16 Mercedes-AMG"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-7">MSI Stealth 16 Mercedes-AMG</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods btn-info-prod">
+                                    <div class="btn-1">
+                                        <a class="btn-card" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-7" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-7" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/vector-gp78-1.png" alt="MSI Vector GP78 HX 13V"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-8">MSI Vector GP78 HX 13V</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-8" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-8" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/predator-triton-14-1.png" alt="Acer Predator Triton 14"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-9">Acer Predator Triton 14</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-9" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-9" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/helios-neo-16-1.png" alt="Acer Predator Helios Neo 16"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-10">Acer Predator Helios Neo 16</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-10" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-10" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-producto">
+                            <div class="little-car" onclick="agregarCarrito()">
+                                <i class="bi bi-cart-plus"></i>
+                            </div>
+                            <div class="card-image cimage-laptop"><img src="img/computadores/tuf-a15-1.png" alt="Asus TUF Gaming A15"></div>
+                            <div class="card-content">
+                                <h2 class="card-title" id="nombre-lap-11">Asus TUF Gaming A15</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae</p>
+                                <div class="botones-prods">
+                                    <div class="btn-1">
+                                        <a class="btn-card btn-info-prod" href="comprar-prod.html#caracteristicas" id="bot-nombre-lap-11" onclick="guardarTipoInfo(id)">Conocer más</a>
+                                    </div>
+                                    <div class="btn-2">
+                                        <a class="btn-card btn-comprar-prod" href="comprar-prod.html" id="btn-nombre-lap-11" onclick="guardarNombre(id)">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-subcont-1">
+                    <div class="footer-subs">
+                        <h2>Promociones y Descuentos</h2>
+                        <p>Suscribete a nuestras promociones y descuentos</p>
+                    </div>
+                    <div class="footer-subs-email">
+                        <input type="email" spellcheck="false" placeholder="Email">
+                        <button>Subs</button>
+                    </div>
+                </div>
+                <div class="footer-subcont-2">
+                    <section class="footer-logo">
+                        <h2>
+                            <svg width="28" height="28" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#000000" d="M29.1 27.1c-1.1-.1-2.2.3-3.1 1.1c-1.1 1.1-2.9 1.1-4.1 0c-1-.7-2.1-1.1-3.3-1.1c-1.2-.1-2.4.3-3.3 1.1c-.6.5-1.3.8-2.1.8s-1.5-.3-2.1-.8c-1-.8-2.2-1.2-3.4-1.2s-2.4.4-3.4 1.2c-.6.5-1.5.8-2.3.8v2c1.3.1 2.6-.3 3.6-1.2c.6-.5 1.5-.8 2.3-.8c.7 0 1.5.3 2.1.8c1.8 1.6 4.6 1.6 6.5 0c.6-.5 1.3-.8 2.1-.8c.7 0 1.4.3 2 .8c1.9 1.6 4.6 1.6 6.5 0c.5-.5 1.3-.8 2-.8s1.4.3 1.9.8c.9.7 1.9 1.1 3 1.2v-2c-1 0-1.2-.4-1.7-.8c-.9-.7-2-1.1-3.2-1.1z" class="clr-i-outline clr-i-outline-path-1"/>
+                                <path fill="#000000" d="M6 23c0-.6.5-1 1.1-1H32l-3.5 3.1h.2c.8 0 1.6.2 2.2.5l2.5-2.2l.2-.2c.7-.8.6-2.1-.2-2.8c-.4-.2-.8-.4-1.3-.4h-25c-1.7 0-3 1.3-3 3v3.2c.5-.5 1.2-.8 1.9-1.1V23z" class="clr-i-outline clr-i-outline-path-2"/>
+                                <path fill="#000000" d="M8.9 19H15v-7.8c0-.6-.3-1.2-.8-1.6c-.9-.7-2.2-.5-2.8.4l-4.1 5.9c-.4.6-.4 1.4-.1 2.1c.3.6 1 1 1.7 1zm4.2-7.8L13 17H8.9l4.2-5.8z" class="clr-i-outline clr-i-outline-path-3"/>
+                                <path fill="#000000" d="M26 18c.4-.6.4-1.4 0-2L19.7 5.6c-.4-.6-1-1-1.7-1c-1.1 0-2 .9-2 2V19h8.3c.7 0 1.4-.4 1.7-1zM17.9 6.6l6.4 10.5h-6.4V6.6z" class="clr-i-outline clr-i-outline-path-4"/>
+                                <path fill="none" d="M0 0h36v36H0z"/>
+                            </svg>
+                        </h2>
+                    </section>
+                    <section>
+                        <h3>Productos</h3>
+                        <ul>
+                            <li><a href="#" title="Celulares">Celulares</a></li>
+                            <li><a href="#" title="Tablets">Tablets</a></li>
+                            <li><a href="#" title="Computadores">Computadores</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Soporte</h3>
+                        <ul>
+                            <li><a href="#" title="Servicio">Centro de Servicio</a></li>
+                            <li><a href="#" title="Repuestos">Repuestos</a></li>
+                            <li><a href="#" title="Garantía">Garantía</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Empresa</h3>
+                        <ul>
+                            <li><a href="#" title="Sobre Nosotros">Sobre Nosotros</a></li>
+                            <li><a href="#" title="Contacto">Contacto</a></li>
+                            <li><a href="#" title="Política de Privacidad">Política de Privacidad</a></li>
+                            <li><a href="#" title="Términos de Uso">Términos de Uso</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="footer-subcont-3">
+                    <div class='social-networks'>
+                        <ul>
+                            <li><a href="#" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#" title="WhatsApp"><i class="bi bi-whatsapp"></i></a></li>
+                            <li><a href="#" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#" title="YouTube"><i class="bi bi-youtube"></i></i></a></li>
+                        </ul>
+                    </div>
+                    <small>ⓒ Py Team 2023, todos los derechos reservados.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -178,6 +178,25 @@ html {
 
 /* Primera sección */
 
+.card-titulo {
+    text-align: center;
+}
+
+.card-titulo h2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #3f4853;
+}
+
+.card-titulo a{
+
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #3f4853;
+}
+
 main {
     margin: 20px
 }
@@ -976,6 +995,182 @@ figcaption p {
     background: linear-gradient(90deg, hsla(192, 16%, 94%, 1) 45%, hsla(198, 100%, 98%, 1) 100%);
 }
 
+/* ---------------------------------- FORM ---------------------------------- */
+
+.box {
+    margin-top: 50px;
+    position:relative;
+    width: 600px;
+    height: 800px;
+    background: #5f5f5f;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .box::before{
+    width: 600px;
+    height: 800px;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,transparent,#0490ee,#0490ee,#0490ee);
+    z-index: 1;
+    animation: animte 6s linear infinite;
+  }
+  
+  .box::after {
+    width: 600px;
+    height: 800px;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,transparent,#0490ee,#0490ee,#0490ee);
+    z-index: 1;
+    animation: animte 6s linear infinite;
+    animation-delay: -3s;
+  }
+  
+  .borderLine {
+    position: absolute;
+    top: 0;
+    inset: 0;
+  }
+  
+  .borderLine:before {
+    width: 600px;
+    height: 800px;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,transparent,#cfee04,#cfee04,#cfee04);
+    z-index: 1;
+    animation: animte 6s linear infinite;
+    animation-delay: -1.5s;
+  }
+  
+  .borderLine:after {
+    width: 600px;
+    height: 800px;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,transparent,#cfee04,#cfee04,#cfee04);
+    z-index: 1;
+    animation: animte 6s linear infinite;
+    animation-delay: -4.5s;
+  }
+  
+  @keyframes animte{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  .box form {
+    position: absolute;
+    inset: 4px;
+    background: #5f5f5f;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box form h2 {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1rem;
+  }
+  
+  .box form .inputBox {
+    position: relative;
+    width: 500px;
+    margin-top: 15px;
+  }
+
+  .box form .inputBox label {
+    color: #fff;
+  }
+  
+  .box form .inputBox input {
+    position: relative;
+    width: 100%;
+    margin: 2px;
+    padding: 20px 10px 10px;
+    background-color: #9c9c9c;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 5;
+    border: none;
+  }
+
+  .box form .adicional input {
+    position: relative;
+    width: 100%;
+    margin: 2px;
+    padding: 60px 10px 10px;
+    background-color: #9c9c9c;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 5;
+    border: none;
+  }
+  
+  
+  .box form input[type='submit']{
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    width: 300px;
+    margin-top: 50px;
+    font-weight: 600;
+  }
+  
+  .box form input[type='submit']:active{
+    opacity: 1;
+  }
+  
+  .formulario {
+    display: flex;
+    place-content: center;
+  }
+  
+  .anuncio {
+    z-index: 10;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1rem;
+  }
+  
+  .swal-overlay {
+    background-color: rgba(92, 167, 149, 0.45);
+  }
 
 @media screen and (min-width:0px) and (max-width: 480px) {
     /* Navbar */
