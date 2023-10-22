@@ -254,7 +254,7 @@ html {
     border-radius: 10px;
 }
 
-.container-categorias-productos > p {
+.container-categorias-productos > p, .contenedor-marcas > p {
     text-align: center;
     margin: 10px 0px;
     font-size: 20pt;
@@ -292,7 +292,7 @@ html {
 }
 
 .contenedor-productos-destacados {
-    margin-top: 25px;
+    margin: 25px 30px 0px;
 }
 
 .contenedor-productos-destacados > .container-cards .card-image {
@@ -304,12 +304,51 @@ html {
     align-items: center;
 }
 
+.contenedor-productos-destacados > .container-cards {
+    margin: 0px 20px;
+}
+
 .contenedor-productos-destacados > .container-cards .card-content {
     background: linear-gradient(to bottom left, #c0ccdf 20%, #48a6ffbd 100%);
 }
 
 .contenedor-marcas {
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+    padding: 20px 0px;
+    background: rgba(188, 200, 220, 0.651);
+    border-radius: 10px;
+}
+
+.wrapper-marcas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-marca {
+    margin: 0px 15px;
+}
+
+.card-marca a img {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-marca a img:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.wrapper-marcas img {
+    max-width: 200px;
 }
 
 /* Primera sección */
@@ -1406,8 +1445,49 @@ figcaption p {
         width: 90%;
     }
 
+    .info-portada ul {
+        gap: 0.5em;
+    }
+
     .img-portada {
         width: 100%;
+    }
+
+    .container-categorias-productos {
+        font-size: 14pt !important;
+        margin: 10px 0px;
+    }
+
+    .container-categorias-productos > p {
+        font-size: 12pt;
+    }
+
+    .categ-productos i {
+        font-size: 25pt !important;
+    }
+
+    .categ-productos a {
+        font-size: 11pt !important;
+    }
+
+    .categ-productos > .celulares, .categ-productos > .tablets, .categ-productos > .laptops {
+        margin: 10px 15px;
+    }
+
+    .contenedor-productos-destacados {
+        margin: 25px 0px;
+    }
+
+    .contenedor-marcas {
+        margin: 0px;
+    }
+
+    .contenedor-marcas p {
+        font-size: 14pt;
+    }
+
+    .wrapper-marcas img {
+        max-width: 100px;
     }
 
     /* Seccion celulares, tablets, laptops*/

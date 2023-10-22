@@ -179,10 +179,10 @@ let caractsLaps = [ "<h3>Con Intel disfrutas de los mejores juegos en calidad de
 if (sessionStorage.getItem("tipoProducto")) {
     let tipoProducto = sessionStorage.getItem("tipoProducto");
     const elementsCarac = document.getElementsByClassName("caract");
+    let indices = [];
 
     switch (tipoProducto) {
         case "lap":
-            let indices = [];
             for (const element of elementsCarac) {
                 let indice = getRandomInt(caractsLaps.length);
                 while (indices.find((element) => element == indice) == indice) {
@@ -194,9 +194,17 @@ if (sessionStorage.getItem("tipoProducto")) {
             break;
 
         case "tab":
+            for (const element of elementsCarac) {
+                let indice = getRandomInt(caractsLaps.length);
+                element.innerHTML = caractsLaps[indice];
+            }
             break;
 
         case "cel":
+            for (const element of elementsCarac) {
+                let indice = getRandomInt(caractsLaps.length-5);
+                element.innerHTML = caractsLaps[indice];
+            }
             break;
     }
 
