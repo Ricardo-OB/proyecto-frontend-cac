@@ -176,6 +176,142 @@ html {
     transition: all .3s ease;
 }
 
+/* Home */
+
+.contenedor-portada {
+    width: 100%;
+    display: flex;
+}
+
+.portada {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: rgb(229, 236, 242);
+}
+
+.info-portada {
+    margin-left: 7em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 35%;
+    gap: 15px;
+}
+
+.info-portada h1 {
+    font-size: 30pt;
+}
+
+.info-portada ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 7px 0px;
+}
+
+.info-portada a {
+    text-decoration: none;
+}
+
+.badge {
+    background-color: rgba(61, 117, 177, 0.9);
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 150px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.badge:hover {
+    background-color: rgb(18, 101, 190);
+    transition: all 0.3s ease-in-out;
+}
+
+.img-portada {
+    width: 65%;
+}
+
+.img-portada img {
+    width: -webkit-fill-available;
+}
+
+.container-categorias-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 20px 100px;
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container-categorias-productos > p {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 20pt;
+}
+
+.categ-productos {
+    display: flex;
+    flex-direction: row;
+}
+
+.categ-productos i {
+    font-size: 90pt;
+}
+
+.categ-productos > .celulares,
+.categ-productos > .tablets,
+.categ-productos > .laptops {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.celulares:hover, .tablets:hover, .laptops:hover, .categ-productos i:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    color: rgb(173, 70, 75);
+}
+
+.container-categorias-productos a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor-productos-destacados {
+    margin-top: 25px;
+}
+
+.contenedor-productos-destacados > .container-cards .card-image {
+    max-height: 330px;
+    min-height: 330px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-productos-destacados > .container-cards .card-content {
+    background: linear-gradient(to bottom left, #c0ccdf 20%, #48a6ffbd 100%);
+}
+
+.contenedor-marcas {
+    
+}
+
 /* Primera sección */
 
 .card-titulo {
@@ -202,14 +338,14 @@ main {
 }
 
 
-.seccion-celulares, .seccion-tablets, .seccion-laptops, .seccion-sobre-nosotros {
+.seccion-celulares, .seccion-tablets, .seccion-laptops, .seccion-sobre-nosotros, .seccion-contacto {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 40px 130px 30px;
 }
 
-.seccion-celulares h1, .seccion-tablets h1, .seccion-laptops h1, .seccion-sobre-nosotros h1 {
+.seccion-celulares h1, .seccion-tablets h1, .seccion-laptops h1, .seccion-sobre-nosotros h1, .seccion-contacto h1 {
     margin: 8px 0px;
     font-size: 40pt;
 }
@@ -995,182 +1131,224 @@ figcaption p {
     background: linear-gradient(90deg, hsla(192, 16%, 94%, 1) 45%, hsla(198, 100%, 98%, 1) 100%);
 }
 
-/* ---------------------------------- FORM ---------------------------------- */
+ /* Contacto */
+
+.seccion-contacto {
+    flex-direction: row;
+}
+
+.seccion-contacto > p, .mapa > p {
+    margin: 10px 0px;
+    text-align: justify;
+    flex-direction: row;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 25px 0px;
+}
 
 .box {
-    margin-top: 50px;
-    position:relative;
-    width: 600px;
-    height: 800px;
-    background: #5f5f5f;
+    position: relative;
+    width: 55%;
+    height: 775px;
+    background: rgb(182, 181, 181);
     border-radius: 8px;
     overflow: hidden;
-  }
-  
-  .box::before{
-    width: 600px;
-    height: 800px;
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    transform-origin: bottom right;
-    background: linear-gradient(0deg,transparent,transparent,#0490ee,#0490ee,#0490ee);
-    z-index: 1;
-    animation: animte 6s linear infinite;
-  }
-  
-  .box::after {
-    width: 600px;
-    height: 800px;
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    transform-origin: bottom right;
-    background: linear-gradient(0deg,transparent,transparent,#0490ee,#0490ee,#0490ee);
-    z-index: 1;
-    animation: animte 6s linear infinite;
-    animation-delay: -3s;
-  }
-  
-  .borderLine {
-    position: absolute;
-    top: 0;
-    inset: 0;
-  }
-  
-  .borderLine:before {
-    width: 600px;
-    height: 800px;
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    transform-origin: bottom right;
-    background: linear-gradient(0deg,transparent,transparent,#cfee04,#cfee04,#cfee04);
-    z-index: 1;
-    animation: animte 6s linear infinite;
-    animation-delay: -1.5s;
-  }
-  
-  .borderLine:after {
-    width: 600px;
-    height: 800px;
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    transform-origin: bottom right;
-    background: linear-gradient(0deg,transparent,transparent,#cfee04,#cfee04,#cfee04);
-    z-index: 1;
-    animation: animte 6s linear infinite;
-    animation-delay: -4.5s;
-  }
-  
-  @keyframes animte{
-    0%{
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(360deg);
-    }
-  }
-  
-  .box form {
-    position: absolute;
+}
+
+.formulario-contacto {
+    font-family: 'Roboto', sans-serif !important;
     inset: 4px;
-    background: #5f5f5f;
-    padding: 50px 40px;
+    position: absolute;
+    background: rgb(211 211 211);
     border-radius: 8px;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .box form h2 {
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.1rem;
-  }
-  
-  .box form .inputBox {
-    position: relative;
-    width: 500px;
-    margin-top: 15px;
-  }
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 1.25em;
+}
 
-  .box form .inputBox label {
-    color: #fff;
-  }
-  
-  .box form .inputBox input {
-    position: relative;
-    width: 100%;
-    margin: 2px;
-    padding: 20px 10px 10px;
-    background-color: #9c9c9c;
-    border-radius: 8px;
-    color: #ffffff;
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    z-index: 5;
-    border: none;
-  }
+.formulario-contacto label {
+    margin: 10px 0px;
+}
 
-  .box form .adicional input {
-    position: relative;
-    width: 100%;
-    margin: 2px;
-    padding: 60px 10px 10px;
-    background-color: #9c9c9c;
-    border-radius: 8px;
-    color: #ffffff;
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    z-index: 5;
-    border: none;
-  }
-  
-  
-  .box form input[type='submit']{
-    border: none;
-    outline: none;
-    padding: 10px 25px;
-    cursor: pointer;
-    font-size: 0.9em;
-    border-radius: 4px;
-    width: 300px;
-    margin-top: 50px;
-    font-weight: 600;
-  }
-  
-  .box form input[type='submit']:active{
-    opacity: 1;
-  }
-  
-  .formulario {
+.formulario-contacto input, .formulario-contacto select {
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid rgb(211, 210, 210);
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.fullname {
+    width: 90%;
+    gap: 10%;
     display: flex;
-    place-content: center;
-  }
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.inputs-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.fullname > div {
+    width: 45% !important;
+}
+
+.inputs-form label {
+    color: black;
+}
+
+#type-prod {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(245, 245, 245);   
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#type-prod:hover {
+    background-color: rgb(141, 140, 140);
+    transition: all .3s ease;
+}
+
+.formulario-contacto textarea {
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid rgb(211, 210, 210);
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.formulario-contacto .btn-enviar {
+    cursor: pointer;
+    width: 40%;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(184, 184, 184, 0.35);
+    border: 2px solid rgba(255, 255, 255, 0.788);
+    font-size: 1rem;
+    min-width: 100px;
+    min-height: 36px;
+    white-space: nowrap;
+    padding: 12px 22px;
+    outline: none;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.formulario-contacto .btn-enviar:hover {
+    background-color: rgb(141, 140, 140);
+    transition: all 0.3s ease-in-out;
+}
+
+.box::before{
+    width: 600px;
+    height: 800px;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,transparent,#0490ee,#0490ee,#0490ee);
+    z-index: 1;
+    animation: colores-circ 6s linear infinite;
+}
   
-  .anuncio {
-    z-index: 10;
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.1rem;
-  }
+.box::after {
+    width: 600px;
+    height: 800px;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,transparent,#0490ee,#0490ee,#0490ee);
+    z-index: 1;
+    animation: colores-circ 16s linear infinite;
+    animation-delay: -6s;
+}
   
-  .swal-overlay {
-    background-color: rgba(92, 167, 149, 0.45);
-  }
+.borderline:before {
+    width: 600px;
+    height: 800px;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,transparent,#cfee04,#cfee04,#cfee04);
+    z-index: 1;
+    animation: colores-circ 16s linear infinite;
+    animation-delay: -6s;
+}
+  
+.borderline:after {
+    width: 600px;
+    height: 800px;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,transparent,#cfee04,#cfee04,#cfee04);
+    z-index: 1;
+    animation: colores-circ 6s linear infinite;
+    animation-delay: -4.5s;
+}
+  
+@keyframes colores-circ{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}  
+
+/* iframe contacto */
+
+.mapa {
+    margin: 50px 0px;
+    width: 100%;
+}
+
+.mapa h2 {
+    font-size: 25pt;
+}
+
+.mapa-cont {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+    width: 800px;
+    height: 400px;
+}
+
+.gmap_iframe {
+    width: 800px !important;
+    height: 400px !important;
+    border: none;
+}
+
 
 @media screen and (min-width:0px) and (max-width: 480px) {
     /* Navbar */
@@ -1216,13 +1394,29 @@ figcaption p {
         display: none;
     }
 
+    /* Home */
+
+    .portada {
+        flex-direction: column;
+    }
+
+    .info-portada {
+        font-size: 12pt;
+        margin: 20px;
+        width: 90%;
+    }
+
+    .img-portada {
+        width: 100%;
+    }
+
     /* Seccion celulares, tablets, laptops*/
 
-    .seccion-celulares, .seccion-tablets, .seccion-laptops {
+    .seccion-celulares, .seccion-tablets, .seccion-laptops, .seccion-contacto {
         margin: 5px 0px 5px;
     }
 
-    .seccion-celulares > h1, .seccion-tablets > h1, .seccion-laptops > h1 {
+    .seccion-celulares > h1, .seccion-tablets > h1, .seccion-laptops > h1, .seccion-contacto > h1 {
         margin: 0px;
     }
 
@@ -1265,7 +1459,7 @@ figcaption p {
         margin-bottom: 7px;
     }
 
-    .seccion-celulares h1, .seccion-tablets h1, .seccion-laptops h1, .seccion-sobre-nosotros h1 {
+    .seccion-celulares h1, .seccion-tablets h1, .seccion-laptops h1 {
         font-size: 25pt;
         text-align: center;
     }
@@ -1273,6 +1467,17 @@ figcaption p {
     #select-marca, #select-resolucion, #select-camara, #select-almacenamiento, #select-procesador, #select-gpu, #select-ram {
         font-size: 15px;
         padding: 5px 4px;
+    }
+
+    /* Contacto */
+
+    .box {
+        width: 100%;
+        height: 720px;
+    }
+
+    .formulario-contacto {
+        gap: 1em;
     }
 
     /* Footer */

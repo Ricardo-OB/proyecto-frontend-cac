@@ -39,12 +39,12 @@
                         </a>
                     </div>
                     <ul class="paginas">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a class="enlace-home" href="index.html">Home</a></li>
                         <li><a class="enlace-celulares" href="celulares.html">Celulares</a></li>
                         <li><a class="enlace-tablets" href="tablets.html">Tablets</a></li>
                         <li><a class="enlace-laptops" href="laptops.html">Laptops</a></li>
                         <li><a class="enlace-sobre-nosotros" href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li><a class="" href="contacto.html">Contacto</a></li>
+                        <li><a class="enlace-contacto" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="search">
@@ -55,40 +55,63 @@
         </div>
     </header>
     <main>
-    <h1>Contacto</h1>
-        <div class="formulario">
-            <div class="box">
-                <span class="borderLine"></span>
-                <form>
-                    <h2>INFORMACION</h2>
-                    <div class="inputBox">
-                        <label>Nombre/Name</label>
-                        <input type="text">
-                    </div>
-                    <div class="inputBox">
-                        <label>Apellido/LastName</label>
-                        <input type="text">
-                    </div>
-                    <div class="inputBox">
-                        <label>Correo/Email</label>
-                        <input type="email">
-                    </div>
-                    <div class="inputBox">
-                        <label>Celular/Phone</label>
-                        <input type="number">
-                    </div>
-                    <div class="inputBox">
-                        <label>Dirección/Address</label>
-                        <input type="text">
-                    </div>
-                    <div class="inputBox adicional">
-                        <label>Info Adicional</label>
-                        <input type="text">
-                    </div>
-                    <input class='btn btn-success' type="submit" value="Enviar" />
-                </form>
+        <section class="seccion-contacto">
+            <h1>Contacto</h1>
+            <p>Para compras, sugerencias y reclamos, te invitamos a utilizar nuestro siguiente formulario en línea. Tu opinión es importante para nosotros, y estamos aquí para escucharte. Completa el formulario con los detalles correspondientes y nuestro equipo de atención al cliente se comunicará contigo en breve para resolver cualquier inquietud que puedas tener. ¡Gracias por elegirnos como tu tienda en línea de confianza!</p>
+            <div class="formulario">
+                <div class="box">
+                    <span class="borderline"></span>
+                    <form class="formulario-contacto" onsubmit="return validarFormulario()">
+                        <div class="fullname">
+                            <div class="field-name inputs-form">
+                                <label for="nombre">Nombre</label>
+                                <input id="nombre" type="text">
+                            </div>
+                            <div class="field-name inputs-form">
+                                <label for="apellido">Apellido</label>
+                                <input id="apellido" type="text">
+                            </div>
+                        </div>
+                            
+                        <div class="inputs-form">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="inputs-form">
+                            <label for="celular">Celular</label>
+                            <input id="celular" type="text" placeholder="+57 3205678888">
+                        </div>
+                        <div class="inputs-form">
+                            <label for="direccion">Dirección</label>
+                            <input id="direccion" type="text" placeholder="Carrera 4A #12-68 (Barrio Buena Vista)">
+                        </div>
+                        <div class="inputs-form">
+                            <label for="type-prod">Tipo de Producto</label>
+                            <select name="type-prod" id="type-prod">
+                                <option value="1">Celular</option>
+                                <option value="2">Tablet</option>
+                                <option value="3" selected>Laptop</option>
+                            </select>
+                        </div>
+                        <div class="inputs-form adicional">
+                            <label for="descripcion">Nombre(s) de Producto(s)</label>
+                            <textarea name="descripcion" id="descripcion" rows="5" placeholder="Ingresa el nombre de los productos y la cantidad que deseas comprar"></textarea>
+                        </div>
+                        <input class='btn-enviar' type="submit" value="Enviar"/>
+                    </form>
+                </div>
             </div>
-        </div>
+            
+            <div class="mapa">
+                <h2>Encuentranos</h2>
+                <p>Si prefieres visitarnos en persona, puedes encontrarnos en nuestra tienda física. Para obtener direcciones precisas y ver nuestra ubicación en el mapa, te invitamos a utilizar el mapa a continuación. Estamos emocionados de recibirte en nuestra tienda y brindarte una experiencia de compra excepcional. ¡Esperamos verte pronto!</p>
+                <div class="mapa-cont">
+                    <div class="gmap_canvas">
+                        <iframe title="mapa" class="gmap_iframe" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Av. Charbo 28, 1030 Bruxelles, Bélgica&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer">
@@ -156,6 +179,14 @@
         </div>
     </footer>
 
-    
+    <script src="js/main.js"></script>
+    <script>
+        let elementoPagina = document.getElementsByClassName('enlace-contacto')[0];
+        Object.assign(elementoPagina.style,{'text-decoration': "solid",
+                                            'text-decoration-line': "underline",
+                                            'text-underline-offset': '12px',
+                                            'text-decoration-thickness': '1.5px',
+                                            'text-decoration-color': 'rgb(0, 0, 0, 0.8)'});
+    </script>
 </body>
 </html>

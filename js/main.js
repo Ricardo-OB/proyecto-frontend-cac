@@ -98,3 +98,41 @@ function guardarTipoInfo(id) {
     let nombreProducto = document.getElementById(id.slice(4)).innerText;
     sessionStorage.setItem("nombreProd", nombreProducto)
 }
+
+// Validar formulario contacto
+
+function validarFormulario() {
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let email = document.getElementById("email").value;
+    let celular = document.getElementById("celular").value;
+    let direccion = document.getElementById("direccion").value;
+    let descripcion = document.getElementById("descripcion").value;
+
+    if (nombre === "" || apellido === "" || email === "" || celular === "" || direccion === "" || descripcion === "") {
+        alert("Por favor, complete todos los campos del formulario.");
+        return false;
+    }
+
+    let regexNombre = /^[A-Za-z\s]+$/;
+    if (!regexNombre.test(nombre) || !regexNombre.test(apellido)) {
+        alert("Los campos 'Nombre' y/o 'Apellido' solo pueden contener caracteres alfabéticos y espacios.");
+        return false;
+    }
+
+    let regexEmail = /^[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+    if (!regexEmail.test(email)) {
+        alert("Por favor, ingrese un correo electrónico válido.");
+        return false;
+    }
+
+    let regexCelular = /^\+?[0-9]+$/;
+    if (!regexCelular.test(celular)) {
+        alert("El campo 'Celular' solo puede contener dígitos y un signo de más opcional al principio.");
+        return false;
+    }
+
+    alert("Formulario enviado correctamente.");
+    return true;
+
+}
