@@ -178,6 +178,25 @@ html {
 
 /* Primera sección */
 
+.card-titulo {
+    text-align: center;
+}
+
+.card-titulo h2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #3f4853;
+}
+
+.card-titulo a{
+
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #3f4853;
+}
+
 main {
     margin: 20px
 }
