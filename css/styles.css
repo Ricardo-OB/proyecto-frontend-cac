@@ -299,6 +299,11 @@ main {
     min-height: 240px;
     max-height: 240px;
 }
+
+.cimage-laptop > img {
+    min-height: 280px;
+    max-height: 280px;
+}
   
 .card-content {
     padding: 1rem;
@@ -653,7 +658,6 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: right;
-    align-items: center;
 }
 
 figcaption p {
@@ -917,11 +921,59 @@ figcaption p {
 }
 
 .caracteristicas {
-
+    margin-left: 1.2em;
 }
 
-.especificaciones {
+.caracteristicas h3 {
+    margin: 20px 0px 10px;
+}
 
+.caracteristicas ul {
+    list-style-position: outside;
+}
+
+.especificaciones table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0px 10px;
+}
+
+.especificaciones > p {
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.no-th {
+    display: none !important;
+}
+
+.especificaciones .title-td {
+    text-align: right;
+    border-left: none;
+    border-right: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+    border-top: 1px solid #c9c9c9;
+    padding: 17px 40px 17px 0px;
+    font-size: 13.5pt;
+}
+
+.especificaciones .desc-td {
+    border-left: 1px solid #c9c9c9;
+    border-right: none;
+    border-bottom: 1px solid #c9c9c9;
+    border-top: 1px solid #c9c9c9;
+    text-align: left;
+    padding: 17px 0px 17px 40px;
+    font-size: 12pt;
+}
+  
+.especificaciones tr:nth-child(even) .title-td {
+    background: linear-gradient(90deg, hsla(198, 100%, 98%, 1) 0%, hsla(192, 16%, 94%, 1) 55%);
+}
+
+.especificaciones tr:nth-child(even) .desc-td {
+    background: linear-gradient(90deg, hsla(192, 16%, 94%, 1) 45%, hsla(198, 100%, 98%, 1) 100%);
 }
 
 
@@ -969,7 +1021,7 @@ figcaption p {
         display: none;
     }
 
-    /* Seccion celulares, tablets, */
+    /* Seccion celulares, tablets, laptops*/
 
     .seccion-celulares, .seccion-tablets, .seccion-laptops {
         margin: 5px 0px 5px;
@@ -1119,6 +1171,28 @@ figcaption p {
         font-size: 14px;
     }
 
+    .container-caracteristicas {
+        width: 85%;
+    }
+
+    .especificaciones > p {
+        font-weight: 600;
+        font-size: 12pt;
+    }
+
+    .especificaciones .title-td {
+        text-align: left;
+        padding: 5px 0px 5px 5px;
+        font-size: 11pt;
+        font-size: default;
+    }
+
+    .especificaciones .desc-td {
+        padding: 5px 0px 5px 5px;
+        font-size: 10.5pt;
+        font-size: default;
+    }
+
     /* Sobre Nosotros */
 
     .seccion-sobre-nosotros {
@@ -1148,6 +1222,10 @@ figcaption p {
         width: 80%;
         padding: 20px 0px;
         text-align: center !important;
+    }
+
+    .person2 > .info-person {
+        align-items: center;
     }
 
 }
