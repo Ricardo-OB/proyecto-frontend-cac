@@ -308,6 +308,10 @@ html {
     margin: 0px 20px;
 }
 
+.container-cards .card-producto .home {
+    margin: 15px 10px 15px;
+}
+
 .contenedor-productos-destacados > .container-cards .card-content {
     background: linear-gradient(to bottom left, #c0ccdf 20%, #48a6ffbd 100%);
 }
