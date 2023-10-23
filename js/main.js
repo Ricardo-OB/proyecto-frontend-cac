@@ -14,6 +14,7 @@ function activarMenuH() {
 // Hover carrito
 
 const cards = document.getElementsByClassName("card-producto");
+const cardsHome = document.getElementsByClassName("card-producto-home");
 const carritos = document.getElementsByClassName("little-car");
 
 for (let i=0; i<cards.length; i++) {
@@ -24,6 +25,20 @@ for (let i=0; i<cards.length; i++) {
                                 false,);
 
     cards[i].addEventListener("mouseover",
+                                (event) => {
+                                    carritos[i].style.display = "flex";
+                                },
+                                false,);
+}
+
+for (let i=0; i<cardsHome.length; i++) {
+    cardsHome[i].addEventListener("mouseout",
+                                (event) => {
+                                    carritos[i].style.display = "none";
+                                },
+                                false,);
+
+    cardsHome[i].addEventListener("mouseover",
                                 (event) => {
                                     carritos[i].style.display = "flex";
                                 },
